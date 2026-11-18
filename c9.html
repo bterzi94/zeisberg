@@ -50,7 +50,7 @@ h1 .ln:nth-child(2)>span{animation-delay:.27s}
 h1 .ln:nth-child(3)>span{animation-delay:.39s;color:#e8291f}
 .sub{margin-top:clamp(16px,1.7vw,24px);font-size:clamp(16px,1.4vw,20px);line-height:1.55;max-width:520px;color:#444;animation:fadeUp .9s 1.0s ease both}
 .btns{margin-top:clamp(24px,2.5vw,36px);flex-wrap:wrap;animation:fadeUp .9s 1.15s ease both}
-.btn{height:clamp(50px,3.9vw,56px);padding:0 clamp(22px,2.1vw,30px);font-weight:700;font-size:clamp(14px,1.1vw,16px);border-radius:100px}
+.btn{height:clamp(50px,3.9vw,56px);padding:0 clamp(18px,1.7vw,30px);font-weight:700;font-size:clamp(14px,1.1vw,16px);border-radius:100px}
 .btn.primary{background:#e8291f;color:#fff}
 .btn.secondary{background:rgba(17,17,17,.07);color:#111}
 .trust{margin-top:clamp(28px,4.5vh,56px);gap:clamp(16px,2.2vw,32px);flex-wrap:wrap;animation:fadeUp .9s 1.3s ease both}
@@ -58,19 +58,18 @@ h1 .ln:nth-child(3)>span{animation-delay:.39s;color:#e8291f}
 .partner{background:#fff;padding:7px 16px;border-radius:12px;box-shadow:0 2px 12px rgba(0,0,0,.14)}
 
 /* Bühne = eine Einheit: Fläche, Scheiben, Lineal und Bühne skalieren zusammen */
-.stagecol{align-self:end;padding:0 calc(var(--sw)*.315) 0 calc(var(--sw)*.115)}
+.stagecol{align-self:end;padding:0 calc(var(--sw)*.28)}
 .stage{position:relative;height:var(--sh);aspect-ratio:1239/1748;animation:drive 1s cubic-bezier(.2,.8,.2,1) both}
 .disc{position:absolute;left:50%;top:48%;width:127%;aspect-ratio:1;border-radius:50%;background:rgba(17,17,17,.045);transform:translate(-50%,-50%);z-index:0;animation:popc 1.2s cubic-bezier(.2,.8,.2,1) both}
 .ring{position:absolute;left:50%;top:48%;width:155%;aspect-ratio:1;border-radius:50%;border:1px solid rgba(17,17,17,.15);transform:translate(-50%,-50%);z-index:0;animation:popc 1.4s .1s cubic-bezier(.2,.8,.2,1) both}
-.panelwrap{position:absolute;left:-31.5%;right:-31.5%;top:30.3%;bottom:3.7%;z-index:1;filter:drop-shadow(0 30px 38px rgba(0,0,0,.26));animation:pop 1.2s .1s cubic-bezier(.2,.8,.2,1) both}
-.panel{position:absolute;inset:0;border-radius:clamp(20px,2.5vw,36px);background:url(img/bg-clean.jpg) 55% 62%/cover;-webkit-mask-image:linear-gradient(90deg,transparent 0,rgba(0,0,0,.4) 9%,#000 26%);mask-image:linear-gradient(90deg,transparent 0,rgba(0,0,0,.4) 9%,#000 26%)}
+.panelwrap{position:absolute;left:-28%;right:-28%;top:30.3%;bottom:3.7%;z-index:1;filter:drop-shadow(0 30px 38px rgba(0,0,0,.26));animation:pop 1.2s .1s cubic-bezier(.2,.8,.2,1) both}
+.panel{position:absolute;inset:0;border-radius:clamp(20px,2.5vw,36px);background:url(img/bg-clean.jpg) 55% 62%/cover;}
 .lift{position:absolute;inset:0;z-index:2}
-.ruler{position:absolute;top:0;bottom:0;left:calc(131.5% - 64px);width:56px;z-index:2;isolation:isolate;animation:fadeIn 1s .4s ease both}
-.ruler::after{content:"";position:absolute;left:-40px;right:-8px;top:-18px;bottom:-18px;border-radius:16px;background:rgba(255,255,255,.76);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);box-shadow:0 8px 26px rgba(0,0,0,.14);z-index:-1}
-.ruler::before{content:"";position:absolute;right:0;top:0;bottom:0;width:2px;background:rgba(17,17,17,.3)}
-.ruler span{position:absolute;right:0;width:12px;height:2px;background:rgba(17,17,17,.3)}
-.ruler span:has(b){width:24px;background:rgba(17,17,17,.85)}
-.ruler b{position:absolute;right:32px;top:-9px;font-size:13px;font-weight:700;color:rgba(17,17,17,.75);white-space:nowrap}
+.ruler{position:absolute;top:0;bottom:0;left:calc(128% - 70px);width:56px;z-index:2;filter:drop-shadow(0 0 1px #fff) drop-shadow(0 0 2px #fff) drop-shadow(0 0 4px rgba(255,255,255,.9));animation:fadeIn 1s .4s ease both}
+.ruler::before{content:"";position:absolute;right:0;top:0;bottom:0;width:2px;background:rgba(17,17,17,.6)}
+.ruler span{position:absolute;right:0;width:12px;height:2px;background:rgba(17,17,17,.6)}
+.ruler span:has(b){width:24px;background:#111}
+.ruler b{position:absolute;right:32px;top:-9px;font-size:13px;font-weight:700;color:#111;white-space:nowrap}
 .marker{position:absolute;right:-7px;bottom:0;width:16px;height:16px;border-radius:50%;background:#e8291f;box-shadow:0 0 0 6px rgba(232,41,31,.25);margin-bottom:-8px}
 
 /* Tablet und kleiner: untereinander */
@@ -78,7 +77,6 @@ h1 .ln:nth-child(3)>span{animation-delay:.39s;color:#e8291f}
   .main{--sh:clamp(400px,76vw,640px);grid-template-columns:minmax(0,1fr);row-gap:clamp(28px,5vw,48px);align-items:start;padding-top:clamp(8px,2vw,24px)}
   h1{font-size:min(56px,10cqw)}
   .stagecol{justify-self:center;align-self:auto;padding:0}
-  .panel{-webkit-mask-image:none;mask-image:none}
 }
 @media (max-width:1239px){
   .burger{display:block}
