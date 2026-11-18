@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="de"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>C9 – Lightmode</title><style>@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&display=swap');*{box-sizing:border-box;margin:0;padding:0}
+<title>Zeisberg – Hero Scherenbühne (hell)</title><style>@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&display=swap');*{box-sizing:border-box;margin:0;padding:0}
 html,body{height:100%}
 a{color:inherit;text-decoration:none}
 img{display:block;max-width:100%}
@@ -19,17 +19,17 @@ img{display:block;max-width:100%}
 .stars{display:flex;gap:2px;color:#fbbc04}
 .partner img{height:54px;width:auto}
 
+
 body{font-family:'Archivo',sans-serif;color:#0b2545;background:#e9eef6}
-.hero{position:relative;height:100vh;min-height:720px;overflow:hidden;display:flex;flex-direction:column;background:#e9eef6}
-.bgvideo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:right bottom;z-index:1}
-.endframe{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:right bottom;z-index:2;opacity:0;transition:opacity .6s ease}
-.endframe.on{opacity:1}
-.logo img{height:52px;width:auto}
+.hero{position:relative;height:100vh;min-height:720px;overflow:hidden;display:flex;flex-direction:column;background:radial-gradient(900px 700px at 72% 48%,#ffffff 0,#dde4f0 70%)}
+.logo img{height:52px;width:auto;}
 .nav{position:relative;z-index:5;padding:26px 64px;animation:fadeDown .8s ease both}
 .menu a{font-weight:600;font-size:15px;color:rgba(11,37,69,.85);padding:6px 0}
 .menu a:hover,.menu a.active{color:#e8291f}
 .tel{background:#e8291f;color:#fff;font-weight:700;font-size:15px;padding:12px 20px;border-radius:100px}
-
+.disc{position:absolute;right:130px;top:150px;width:700px;height:700px;border-radius:50%;background:rgba(11,37,69,.05);z-index:1;animation:pop 1.2s cubic-bezier(.2,.8,.2,1) both}
+.ring{position:absolute;right:50px;top:70px;width:860px;height:860px;border-radius:50%;border:1px solid rgba(11,37,69,.16);z-index:1;animation:pop 1.4s .1s cubic-bezier(.2,.8,.2,1) both}
+.lift-wrap{position:absolute;right:235px;bottom:36px;width:553px;z-index:3;animation:drive 1s cubic-bezier(.2,.8,.2,1) both}
 .content{position:relative;z-index:4;flex:1;display:flex;flex-direction:column;justify-content:center;padding:0 64px 70px;max-width:760px}
 h1{color:#0b2545;font-weight:900;font-size:62px;line-height:1.02;letter-spacing:-1.5px}
 h1 .ln{display:block;overflow:hidden;padding-bottom:.06em}
@@ -45,19 +45,18 @@ h1 .ln:nth-child(3)>span{animation-delay:.39s;color:#e8291f}
 .trust{position:absolute;left:64px;bottom:44px;z-index:4;gap:32px;animation:fadeUp .9s 1.3s ease both}
 .glabel{font-weight:600;font-size:14px;color:#1b2f4d}
 .partner{background:#fff;padding:7px 16px;border-radius:12px;box-shadow:0 2px 12px rgba(11,37,69,.14)}
-
-/* Höhenskala: Markierung wird per JS exakt mit dem Video-Fortschritt (--p) bewegt */
-.ruler{--p:0;position:absolute;right:40px;top:120px;bottom:44px;width:56px;z-index:4;animation:fadeIn 1s .4s ease both}
+.ruler{position:absolute;right:40px;top:120px;bottom:44px;width:56px;z-index:4;animation:fadeIn 1s .4s ease both}
 .ruler::before{content:"";position:absolute;right:0;top:0;bottom:0;width:2px;background:rgba(11,37,69,.3)}
 .ruler span{position:absolute;right:0;width:12px;height:2px;background:rgba(11,37,69,.3)}
 .ruler span:has(b){width:24px;background:rgba(11,37,69,.8)}
 .ruler b{position:absolute;right:32px;top:-9px;font-size:13px;font-weight:700;color:rgba(11,37,69,.7);white-space:nowrap}
-.marker{position:absolute;right:-7px;width:16px;height:16px;border-radius:50%;background:#e8291f;box-shadow:0 0 0 6px rgba(232,41,31,.25);bottom:calc(var(--p) * (100% - 210px))}
-
+.marker{position:absolute;right:-7px;bottom:0;width:16px;height:16px;border-radius:50%;background:#e8291f;box-shadow:0 0 0 6px rgba(232,41,31,.25);margin-bottom:-8px}
 @keyframes rise{to{transform:none}}
 @keyframes fadeUp{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
 @keyframes fadeDown{from{opacity:0;transform:translateY(-18px)}to{opacity:1;transform:none}}
 @keyframes fadeIn{from{opacity:0}to{opacity:1}}
+@keyframes pop{from{opacity:0;transform:scale(.85)}to{opacity:1;transform:none}}
+@keyframes drive{from{opacity:0;transform:translateX(80px)}to{opacity:1;transform:none}}
 @media (prefers-reduced-motion:reduce){*{animation:none!important}h1 .ln>span{transform:none}}
 </style></head><body>
 <section class="hero">
@@ -74,8 +73,8 @@ h1 .ln:nth-child(3)>span{animation-delay:.39s;color:#e8291f}
   </nav>
   <a class="tel" href="tel:+491779582309"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8a15.1 15.1 0 006.6 6.6l2.2-2.2a1 1 0 011-.25 11.4 11.4 0 003.6.57 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.45.57 3.6a1 1 0 01-.25 1z"/></svg>0177 9582309</a>
 </header>
-<video class="bgvideo" id="hv" autoplay muted playsinline preload="auto" poster="img/plate3-start.jpg"><source src="img/lader-panel-light.mp4" type="video/mp4"></video>
-<img class="endframe" id="ef" src="img/plate3-end.jpg" alt="">
+<div class="disc"></div><div class="ring"></div>
+<div class="lift-wrap"><div id="zb-lift" data-lift="560" data-mode="manual" style="width:100%;line-height:0"></div></div>
 <div class="content">
   <h1><span class="ln"><span>Arbeitsbühnen</span></span><span class="ln"><span>mieten in</span></span><span class="ln"><span>Mönchengladbach</span></span></h1>
   <p class="sub">Gepflegte Bühnen, persönliche Einweisung und Bedienerschulung nach DGUV 308-008. Für Gewerbe und Privat.</p><div class="btns"><a class="btn primary" href="#">Jetzt anfragen</a><a class="btn secondary" href="#">Arbeitsbühnen ansehen</a></div>
@@ -84,22 +83,32 @@ h1 .ln:nth-child(3)>span{animation-delay:.39s;color:#e8291f}
   <div class="google"><span class="g"><svg width="20" height="20" viewBox="0 0 48 48"><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/><path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/></svg></span><div class="rating"><div class="top"><b class="score">5,0</b><span class="stars"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.3 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"/></svg><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.3 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"/></svg><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.3 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"/></svg><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.3 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"/></svg><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.3 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"/></svg></span></div><span class="glabel">40 Bewertungen</span></div></div>
   <div class="partner"><img src="img/Logo_PartnerLIFT.png" alt="PartnerLIFT Verbund"></div>
 </div>
-<div class="ruler" id="ruler"><span style="bottom:0.000%"><b>0 m</b></span><span style="bottom:4.000%"></span><span style="bottom:8.000%"></span><span style="bottom:12.000%"></span><span style="bottom:16.000%"></span><span style="bottom:20.000%"><b>5 m</b></span><span style="bottom:24.000%"></span><span style="bottom:28.000%"></span><span style="bottom:32.000%"></span><span style="bottom:36.000%"></span><span style="bottom:40.000%"><b>10 m</b></span><span style="bottom:44.000%"></span><span style="bottom:48.000%"></span><span style="bottom:52.000%"></span><span style="bottom:56.000%"></span><span style="bottom:60.000%"><b>15 m</b></span><span style="bottom:64.000%"></span><span style="bottom:68.000%"></span><span style="bottom:72.000%"></span><span style="bottom:76.000%"></span><span style="bottom:80.000%"><b>20 m</b></span><span style="bottom:84.000%"></span><span style="bottom:88.000%"></span><span style="bottom:92.000%"></span><span style="bottom:96.000%"></span><span style="bottom:100.000%"><b>25 m</b></span><div class="marker"></div></div>
+<div class="ruler" id="ruler"><span style="bottom:0.000%"><b>0 m</b></span><span style="bottom:4.000%"></span><span style="bottom:8.000%"></span><span style="bottom:12.000%"></span><span style="bottom:16.000%"></span><span style="bottom:20.000%"><b>5 m</b></span><span style="bottom:24.000%"></span><span style="bottom:28.000%"></span><span style="bottom:32.000%"></span><span style="bottom:36.000%"></span><span style="bottom:40.000%"><b>10 m</b></span><span style="bottom:44.000%"></span><span style="bottom:48.000%"></span><span style="bottom:52.000%"></span><span style="bottom:56.000%"></span><span style="bottom:60.000%"><b>15 m</b></span><span style="bottom:64.000%"></span><span style="bottom:68.000%"></span><span style="bottom:72.000%"></span><span style="bottom:76.000%"></span><span style="bottom:80.000%"><b>20 m</b></span><span style="bottom:84.000%"></span><span style="bottom:88.000%"></span><span style="bottom:92.000%"></span><span style="bottom:96.000%"></span><span style="bottom:100.000%"><b>25 m</b></span><div class="marker" id="marker"></div></div>
+<script src="js/scherenbuehne.js"></script>
 <script>
-/* Video läuft einmal und bleibt am letzten Bild stehen. Die Höhenmarkierung folgt dem Video-Fortschritt. */
+/* Scherenbühne fährt einmal aus und bleibt oben stehen; die Markierung am Lineal fährt mit. */
 (function(){
-  var v=document.getElementById('hv'), r=document.getElementById('ruler');
-  var reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  var ef=document.getElementById('ef'); function showEnd(){ ef.classList.add('on'); }
-  function set(p){ r.style.setProperty('--p', Math.max(0,Math.min(1,p))); }
-  function ease(t){ return t<.5 ? 2*t*t : 1-Math.pow(-2*t+2,2)/2; }
-  if(reduce){
-    v.addEventListener('loadedmetadata',function(){ v.pause(); v.currentTime=v.duration; set(1); showEnd(); });
-    return;
+  var L=window.ScissorLift, root=document.getElementById('zb-lift'), mk=document.getElementById('marker');
+  if(!L) return;
+  var reduce=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
+  function ease(x){return x<.5?4*x*x*x:1-Math.pow(-2*x+2,3)/2;}
+  var plat=root.querySelector('#zbPlat'), ruler=document.getElementById('ruler');
+  function apply(p){
+    L.setProgress(p);
+    var r=plat.getBoundingClientRect(), rr=ruler.getBoundingClientRect();
+    var floorY=r.bottom-r.height*0.06;           /* Plattformboden */
+    mk.style.bottom=(rr.bottom-floorY)+'px';
   }
-  function tick(){ if(v.duration) set(ease(v.currentTime/v.duration)); if(!v.ended) requestAnimationFrame(tick); else set(1); }
-  v.addEventListener('playing',function(){ requestAnimationFrame(tick); });
-  v.addEventListener('ended',function(){ set(1); showEnd(); });
+  if(reduce){ apply(1); return; }
+  apply(0);
+  var DELAY=500, UP=2800, t0=null;
+  function frame(ts){
+    if(t0===null) t0=ts;
+    var t=ts-t0-DELAY, p=t<=0?0:Math.min(1,t/UP);
+    apply(ease(p));
+    if(p<1) requestAnimationFrame(frame); else apply(1);
+  }
+  requestAnimationFrame(frame);
 })();
 </script>
 </section>
