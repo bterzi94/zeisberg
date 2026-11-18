@@ -133,19 +133,15 @@ h1 .ln:nth-child(3)>span{animation-delay:.39s;color:#e8291f}
 
 
 
-.tgear{grid-column:1/-1;display:flex;align-items:center;justify-content:space-between;gap:18px 32px;flex-wrap:wrap;padding:clamp(18px,1.8vw,26px) clamp(20px,2.2vw,34px);border-radius:clamp(20px,2.2vw,30px);background:#111;color:#fff;opacity:0;transform:translateY(24px)}
-.tgear.in{opacity:1;transform:none;transition:opacity .7s ease,transform .7s cubic-bezier(.2,.8,.2,1)}
-.tgear-head{display:flex;flex-direction:column;gap:4px}
-.tgear-k{font-weight:800;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:#e8291f}
-.tgear-t{font-weight:900;font-size:clamp(20px,1.8vw,26px);letter-spacing:-.02em;line-height:1.1}
-.tgear-list{display:flex;gap:10px;flex-wrap:wrap}
-.gchip{display:inline-flex;align-items:center;gap:10px;padding:7px 18px 7px 7px;border-radius:100px;background:rgba(255,255,255,.1);color:#fff;font-weight:700;font-size:clamp(14px,1.1vw,16px);transition:background .3s,transform .3s}
-.gchip:hover,.gchip:focus-visible{background:#e8291f;transform:translateY(-2px);outline:none}
-.gicon{width:42px;height:42px;border-radius:50%;background:#fff;display:grid;place-items:center;flex:none}
-.gicon svg{width:80%;height:80%;fill:none;stroke:#111;stroke-width:3.8;stroke-linecap:round;stroke-linejoin:round}
-.gicon .acc{stroke:#e8291f}
-@media (max-width:699px){.tgear{flex-direction:column;align-items:stretch}.tgear-list{flex-direction:column}.gchip{width:100%}}
-@media (prefers-reduced-motion:reduce){.tgear{opacity:1;transform:none}}
+.tmore{margin-top:clamp(26px,3vw,40px);padding-top:clamp(16px,1.8vw,22px);border-top:1px solid rgba(17,17,17,.1);display:flex;align-items:center;flex-wrap:wrap;gap:10px 14px;opacity:0;transform:translateY(14px)}
+.tmore.in{opacity:1;transform:none;transition:opacity .7s ease,transform .7s cubic-bezier(.2,.8,.2,1)}
+.tmore-l{font-size:clamp(14px,1.1vw,15px);color:#666;margin-right:6px}
+.tchip{display:inline-flex;align-items:center;gap:8px;padding:4px 14px 4px 4px;border-radius:100px;border:1px solid rgba(17,17,17,.13);color:#111;font-weight:700;font-size:14px;transition:border-color .25s,color .25s}
+.tchip:hover,.tchip:focus-visible{border-color:#e8291f;color:#e8291f;outline:none}
+.tchip-i{width:30px;height:30px;border-radius:50%;background:#f1f1f1;display:grid;place-items:center;flex:none}
+.tchip-i svg{width:82%;height:82%;fill:none;stroke:#111;stroke-width:4;stroke-linecap:round;stroke-linejoin:round}
+.tchip-i .acc{stroke:#e8291f}
+@media (prefers-reduced-motion:reduce){.tmore{opacity:1;transform:none}}
 
 @keyframes rise{to{transform:none}}
 @keyframes fadeUp{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
@@ -265,19 +261,17 @@ h1 .ln:nth-child(3)>span{animation-delay:.39s;color:#e8291f}
       <span class="tmeta">Arbeitshöhe bis&nbsp;10&nbsp;m · 1&nbsp;Gerät</span>
       <span class="tgo">Geräte ansehen <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
     </a>
-      <div class="tgear">
-        <div class="tgear-head"><span class="tgear-k">Auch mietbar</span><span class="tgear-t">Mietgeräte für Bau &amp; Garten</span></div>
-        <div class="tgear-list">
-        <a class="gchip" href="mietgeraete.html#haecksler"><span class="gicon"><svg viewBox="0 0 120 120" aria-hidden="true"><path d="M22 76h58v18H22z"/><path class="acc" d="M20 28h52L60 62H32z"/><path d="M80 70h16l10-14"/><circle cx="38" cy="100" r="8"/><circle cx="66" cy="100" r="8"/><path d="M22 84H8"/></svg></span><span>Häcksler</span></a>
-        <a class="gchip" href="mietgeraete.html#minibagger"><span class="gicon"><svg viewBox="0 0 120 120" aria-hidden="true"><rect x="16" y="88" width="66" height="16" rx="8"/><rect x="28" y="56" width="32" height="32" rx="3"/><path d="M34 64h20v12H34z"/><path d="M60 68 90 40l12 20"/><path class="acc" d="M102 60l10 10-12 4z"/></svg></span><span>Minibagger</span></a>
-        <a class="gchip" href="mietgeraete.html#bautrockner"><span class="gicon"><svg viewBox="0 0 120 120" aria-hidden="true"><rect x="26" y="26" width="62" height="72" rx="7"/><circle class="acc" cx="57" cy="55" r="17"/><path d="M57 38v34M40 55h34M45 43l24 24M69 43 45 67" stroke-width="2.4"/><path d="M38 86h38"/><circle cx="38" cy="106" r="5"/><circle cx="76" cy="106" r="5"/><path d="M96 48q8-6 16 0M96 62q8-6 16 0"/></svg></span><span>Bautrockner</span></a>
-        </div>
-      </div>
     </div>
     <p class="tnote">Auf Anfrage organisieren wir dir nahezu jede verfügbare Arbeitsbühne.</p>
+    <div class="tmore">
+      <span class="tmore-l">Außerdem vermieten wir weitere Geräte für Bau &amp; Garten, zum Beispiel:</span>
+      <a class="tchip" href="mietgeraete.html#haecksler"><span class="tchip-i"><svg viewBox="0 0 120 120" aria-hidden="true"><path d="M22 76h58v18H22z"/><path class="acc" d="M20 28h52L60 62H32z"/><path d="M80 70h16l10-14"/><circle cx="38" cy="100" r="8"/><circle cx="66" cy="100" r="8"/><path d="M22 84H8"/></svg></span>Häcksler</a>
+      <a class="tchip" href="mietgeraete.html#minibagger"><span class="tchip-i"><svg viewBox="0 0 120 120" aria-hidden="true"><rect x="16" y="88" width="66" height="16" rx="8"/><rect x="28" y="56" width="32" height="32" rx="3"/><path d="M34 64h20v12H34z"/><path d="M60 68 90 40l12 20"/><path class="acc" d="M102 60l10 10-12 4z"/></svg></span>Minibagger</a>
+      <a class="tchip" href="mietgeraete.html#bautrockner"><span class="tchip-i"><svg viewBox="0 0 120 120" aria-hidden="true"><rect x="26" y="26" width="62" height="72" rx="7"/><circle class="acc" cx="57" cy="55" r="17"/><path d="M57 38v34M40 55h34M45 43l24 24M69 43 45 67" stroke-width="2.4"/><path d="M38 86h38"/><circle cx="38" cy="106" r="5"/><circle cx="76" cy="106" r="5"/><path d="M96 48q8-6 16 0M96 62q8-6 16 0"/></svg></span>Bautrockner</a>
+    </div>
   </div>
 </section>
 <script>
-(function(){var c=document.querySelectorAll('.tcard,.tgear');if(!('IntersectionObserver' in window)){c.forEach(function(e){e.classList.add('in')});return;}var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){var i=[].indexOf.call(e.target.parentNode.children,e.target);e.target.style.transitionDelay=(i*90)+'ms';e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:.2});c.forEach(function(e){io.observe(e)});})();
+(function(){var c=document.querySelectorAll('.tcard,.tmore');if(!('IntersectionObserver' in window)){c.forEach(function(e){e.classList.add('in')});return;}var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){var i=[].indexOf.call(e.target.parentNode.children,e.target);e.target.style.transitionDelay=(i*90)+'ms';e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:.2});c.forEach(function(e){io.observe(e)});})();
 </script>
 </body></html>
