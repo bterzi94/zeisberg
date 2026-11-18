@@ -132,24 +132,20 @@ h1 .ln:nth-child(3)>span{animation-delay:.39s;color:#e8291f}
 @media (prefers-reduced-motion:reduce){.tcard{opacity:1;transform:none}}
 
 
-.gear{background:#f4f4f4;padding:clamp(44px,5.4vw,80px) var(--pad)}
-.gear h3{font-weight:900;font-size:clamp(22px,2.2vw,32px);line-height:1.1;letter-spacing:-.02em;color:#111}
-.gear .lead{margin-top:10px;font-size:clamp(15px,1.15vw,17px);max-width:52ch}
-.mgrid{margin-top:clamp(20px,2.4vw,32px);display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(12px,1.4vw,18px)}
-.mcard{display:flex;align-items:center;gap:16px;padding:14px 20px 14px 14px;border-radius:20px;background:#fff;border:1px solid rgba(17,17,17,.07);color:#111;opacity:0;transform:translateY(18px);
-  transition:transform .3s cubic-bezier(.2,.8,.2,1),box-shadow .3s,border-color .3s}
-.mcard.in{opacity:1;transform:none;transition:opacity .6s ease,transform .6s cubic-bezier(.2,.8,.2,1),box-shadow .3s,border-color .3s}
-.mcard:hover,.mcard:focus-visible{transform:translateY(-3px);border-color:#e8291f;box-shadow:0 14px 30px rgba(0,0,0,.1);outline:none}
-.micon{width:64px;aspect-ratio:1;border-radius:16px;background:#f4f4f4;display:grid;place-items:center;flex:none;transition:background .3s}
-.micon svg{width:90%;height:90%;fill:none;stroke:#111;stroke-width:3.6;stroke-linecap:round;stroke-linejoin:round;transition:stroke .3s}
-.micon .acc{stroke:#e8291f;transition:stroke .3s}
-.mcard:hover .micon,.mcard:focus-visible .micon{background:#e8291f}
-.mcard:hover .micon svg,.mcard:focus-visible .micon svg,.mcard:hover .micon .acc,.mcard:focus-visible .micon .acc{stroke:#fff}
-.mname{flex:1;min-width:0;font-weight:800;font-size:clamp(16px,1.3vw,19px);letter-spacing:-.01em}
-.marrow{width:22px;height:22px;flex:none;fill:none;stroke:#e8291f;stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round;transition:transform .3s}
-.mcard:hover .marrow{transform:translateX(5px)}
-@media (max-width:899px){.mgrid{grid-template-columns:minmax(0,1fr)}}
-@media (prefers-reduced-motion:reduce){.mcard{opacity:1;transform:none}}
+
+.tgear{grid-column:1/-1;display:flex;align-items:center;justify-content:space-between;gap:18px 32px;flex-wrap:wrap;padding:clamp(18px,1.8vw,26px) clamp(20px,2.2vw,34px);border-radius:clamp(20px,2.2vw,30px);background:#111;color:#fff;opacity:0;transform:translateY(24px)}
+.tgear.in{opacity:1;transform:none;transition:opacity .7s ease,transform .7s cubic-bezier(.2,.8,.2,1)}
+.tgear-head{display:flex;flex-direction:column;gap:4px}
+.tgear-k{font-weight:800;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:#e8291f}
+.tgear-t{font-weight:900;font-size:clamp(20px,1.8vw,26px);letter-spacing:-.02em;line-height:1.1}
+.tgear-list{display:flex;gap:10px;flex-wrap:wrap}
+.gchip{display:inline-flex;align-items:center;gap:10px;padding:7px 18px 7px 7px;border-radius:100px;background:rgba(255,255,255,.1);color:#fff;font-weight:700;font-size:clamp(14px,1.1vw,16px);transition:background .3s,transform .3s}
+.gchip:hover,.gchip:focus-visible{background:#e8291f;transform:translateY(-2px);outline:none}
+.gicon{width:42px;height:42px;border-radius:50%;background:#fff;display:grid;place-items:center;flex:none}
+.gicon svg{width:80%;height:80%;fill:none;stroke:#111;stroke-width:3.8;stroke-linecap:round;stroke-linejoin:round}
+.gicon .acc{stroke:#e8291f}
+@media (max-width:699px){.tgear{flex-direction:column;align-items:stretch}.tgear-list{flex-direction:column}.gchip{width:100%}}
+@media (prefers-reduced-motion:reduce){.tgear{opacity:1;transform:none}}
 
 @keyframes rise{to{transform:none}}
 @keyframes fadeUp{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
@@ -248,55 +244,40 @@ h1 .ln:nth-child(3)>span{animation-delay:.39s;color:#e8291f}
     <a class="tcard" href="arbeitsbuehnen.html#lkw">
       <span class="ticon"><svg viewBox="0 0 120 120" aria-hidden="true"><path d="M12 78h70v14H12z"/><path d="M82 78V60h16l12 12v20H82"/><path d="M90 62v10h14"/><circle cx="28" cy="94" r="8"/><circle cx="96" cy="94" r="8"/><path d="M38 76 70 30"/><rect class="acc" x="68" y="14" width="26" height="18" rx="3"/><path d="M70 30l4 2"/></svg></span>
       <span class="tname">LKW-Arbeits&shy;bühnen</span>
-      <span class="tmeta">Arbeitshöhe bis 30 m · 5 Geräte</span>
+      <span class="tmeta">Arbeitshöhe bis&nbsp;30&nbsp;m · 5&nbsp;Geräte</span>
       <span class="tgo">Geräte ansehen <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
     </a>
     <a class="tcard" href="arbeitsbuehnen.html#raupe">
       <span class="ticon"><svg viewBox="0 0 120 120" aria-hidden="true"><rect x="16" y="88" width="88" height="18" rx="9"/><circle cx="32" cy="97" r="3"/><circle cx="60" cy="97" r="3"/><circle cx="88" cy="97" r="3"/><rect x="34" y="70" width="52" height="18" rx="3"/><path d="M50 70V54l32-24"/><path d="M82 30l4-3"/><rect class="acc" x="80" y="12" width="24" height="17" rx="3"/></svg></span>
       <span class="tname">Raupen&shy;arbeits&shy;bühnen</span>
-      <span class="tmeta">Arbeitshöhe bis 20 m · 2 Geräte</span>
+      <span class="tmeta">Arbeitshöhe bis&nbsp;20&nbsp;m · 2&nbsp;Geräte</span>
       <span class="tgo">Geräte ansehen <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
     </a>
     <a class="tcard" href="arbeitsbuehnen.html#schere">
       <span class="ticon"><svg viewBox="0 0 120 120" aria-hidden="true"><path d="M22 92h76v10H22z"/><circle cx="34" cy="106" r="5"/><circle cx="86" cy="106" r="5"/><rect class="acc" x="24" y="30" width="72" height="8" rx="2"/><path d="M28 30V14h64v16M28 22h64"/><path d="M32 38 88 64M88 38 32 64M32 64 88 92M88 64 32 92"/></svg></span>
       <span class="tname">Scheren&shy;arbeits&shy;bühnen</span>
-      <span class="tmeta">Arbeitshöhe bis 12 m · 6 Geräte</span>
+      <span class="tmeta">Arbeitshöhe bis&nbsp;12&nbsp;m · 6&nbsp;Geräte</span>
       <span class="tgo">Geräte ansehen <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
     </a>
     <a class="tcard" href="arbeitsbuehnen.html#teleskopmast">
       <span class="ticon"><svg viewBox="0 0 120 120" aria-hidden="true"><path d="M26 92h68v10H26z"/><circle cx="38" cy="106" r="5"/><circle cx="82" cy="106" r="5"/><rect x="52" y="70" width="16" height="22"/><rect x="55" y="48" width="10" height="22"/><rect x="58" y="34" width="4" height="14"/><rect class="acc" x="36" y="26" width="48" height="8" rx="2"/><path d="M40 26V12h40v14M40 19h40"/></svg></span>
       <span class="tname">Teleskop&shy;mast&shy;bühne</span>
-      <span class="tmeta">Arbeitshöhe bis 10 m · 1 Gerät</span>
+      <span class="tmeta">Arbeitshöhe bis&nbsp;10&nbsp;m · 1&nbsp;Gerät</span>
       <span class="tgo">Geräte ansehen <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
     </a>
+      <div class="tgear">
+        <div class="tgear-head"><span class="tgear-k">Auch mietbar</span><span class="tgear-t">Mietgeräte für Bau &amp; Garten</span></div>
+        <div class="tgear-list">
+        <a class="gchip" href="mietgeraete.html#haecksler"><span class="gicon"><svg viewBox="0 0 120 120" aria-hidden="true"><path d="M22 76h58v18H22z"/><path class="acc" d="M20 28h52L60 62H32z"/><path d="M80 70h16l10-14"/><circle cx="38" cy="100" r="8"/><circle cx="66" cy="100" r="8"/><path d="M22 84H8"/></svg></span><span>Häcksler</span></a>
+        <a class="gchip" href="mietgeraete.html#minibagger"><span class="gicon"><svg viewBox="0 0 120 120" aria-hidden="true"><rect x="16" y="88" width="66" height="16" rx="8"/><rect x="28" y="56" width="32" height="32" rx="3"/><path d="M34 64h20v12H34z"/><path d="M60 68 90 40l12 20"/><path class="acc" d="M102 60l10 10-12 4z"/></svg></span><span>Minibagger</span></a>
+        <a class="gchip" href="mietgeraete.html#bautrockner"><span class="gicon"><svg viewBox="0 0 120 120" aria-hidden="true"><rect x="26" y="26" width="62" height="72" rx="7"/><circle class="acc" cx="57" cy="55" r="17"/><path d="M57 38v34M40 55h34M45 43l24 24M69 43 45 67" stroke-width="2.4"/><path d="M38 86h38"/><circle cx="38" cy="106" r="5"/><circle cx="76" cy="106" r="5"/><path d="M96 48q8-6 16 0M96 62q8-6 16 0"/></svg></span><span>Bautrockner</span></a>
+        </div>
+      </div>
     </div>
     <p class="tnote">Auf Anfrage organisieren wir dir nahezu jede verfügbare Arbeitsbühne.</p>
   </div>
 </section>
-<section class="sec gear" id="mietgeraete">
-  <div class="sec-in">
-    <h3>Mietgeräte für Bau &amp; Garten</h3>
-    <p class="lead">Zusätzlich zu den Arbeitsbühnen vermieten wir Geräte für Bau und Garten.</p>
-    <div class="mgrid">
-      <a class="mcard" href="mietgeraete.html#haecksler">
-        <span class="micon"><svg viewBox="0 0 120 120" aria-hidden="true"><path d="M22 76h58v18H22z"/><path class="acc" d="M20 28h52L60 62H32z"/><path d="M80 70h16l10-14"/><circle cx="38" cy="100" r="8"/><circle cx="66" cy="100" r="8"/><path d="M22 84H8"/></svg></span>
-        <span class="mname">Häcksler</span>
-        <svg class="marrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-      </a>
-      <a class="mcard" href="mietgeraete.html#minibagger">
-        <span class="micon"><svg viewBox="0 0 120 120" aria-hidden="true"><rect x="16" y="88" width="66" height="16" rx="8"/><rect x="28" y="56" width="32" height="32" rx="3"/><path d="M34 64h20v12H34z"/><path d="M60 68 90 40l12 20"/><path class="acc" d="M102 60l10 10-12 4z"/></svg></span>
-        <span class="mname">Minibagger</span>
-        <svg class="marrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-      </a>
-      <a class="mcard" href="mietgeraete.html#bautrockner">
-        <span class="micon"><svg viewBox="0 0 120 120" aria-hidden="true"><rect x="26" y="26" width="62" height="72" rx="7"/><circle class="acc" cx="57" cy="55" r="17"/><path d="M57 38v34M40 55h34M45 43l24 24M69 43 45 67" stroke-width="2.4"/><path d="M38 86h38"/><circle cx="38" cy="106" r="5"/><circle cx="76" cy="106" r="5"/><path d="M96 48q8-6 16 0M96 62q8-6 16 0"/></svg></span>
-        <span class="mname">Bautrockner</span>
-        <svg class="marrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-      </a>
-    </div>
-  </div>
-</section>
 <script>
-(function(){var c=document.querySelectorAll('.tcard,.mcard');if(!('IntersectionObserver' in window)){c.forEach(function(e){e.classList.add('in')});return;}var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){var i=[].indexOf.call(e.target.parentNode.children,e.target);e.target.style.transitionDelay=(i*90)+'ms';e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:.2});c.forEach(function(e){io.observe(e)});})();
+(function(){var c=document.querySelectorAll('.tcard,.tgear');if(!('IntersectionObserver' in window)){c.forEach(function(e){e.classList.add('in')});return;}var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){var i=[].indexOf.call(e.target.parentNode.children,e.target);e.target.style.transitionDelay=(i*90)+'ms';e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:.2});c.forEach(function(e){io.observe(e)});})();
 </script>
 </body></html>
