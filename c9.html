@@ -96,6 +96,41 @@ h1 .ln:nth-child(3)>span{animation-delay:.39s;color:#e8291f}
   .tel{padding:10px 14px;font-size:13px}
   .logo img{height:34px}
 }
+
+.sec{padding:clamp(64px,8vw,120px) var(--pad);background:#fff}
+.sec-in{max-width:1240px;margin:0 auto}
+.kicker{font-weight:800;font-size:clamp(12px,1vw,14px);letter-spacing:.14em;text-transform:uppercase;color:#e8291f}
+.sec h2{margin-top:12px;font-weight:900;font-size:clamp(30px,3.4vw,52px);line-height:1.05;letter-spacing:-.025em;color:#111;max-width:18ch}
+.lead{margin-top:clamp(14px,1.5vw,20px);font-size:clamp(16px,1.35vw,19px);line-height:1.55;color:#444;max-width:56ch}
+.tgrid{margin-top:clamp(32px,4vw,56px);display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:clamp(14px,1.6vw,24px)}
+.tcard{position:relative;display:flex;flex-direction:column;align-items:flex-start;padding:clamp(22px,2vw,32px);border-radius:clamp(20px,2.2vw,30px);background:#f4f4f4;border:1px solid rgba(17,17,17,.07);color:#111;overflow:hidden;
+  transition:transform .35s cubic-bezier(.2,.8,.2,1),box-shadow .35s,background .35s,border-color .35s;opacity:0;transform:translateY(24px)}
+.tcard.in{opacity:1;transform:none;transition:opacity .7s ease,transform .7s cubic-bezier(.2,.8,.2,1),box-shadow .35s,background .35s,border-color .35s}
+.tcard:hover,.tcard:focus-visible{transform:translateY(-6px);background:#fff;border-color:#e8291f;box-shadow:0 22px 44px rgba(0,0,0,.14);outline:none}
+.ticon{width:clamp(132px,12.4vw,176px);aspect-ratio:1;border-radius:clamp(22px,2.4vw,32px);background:#fff;display:grid;place-items:center;box-shadow:0 1px 0 rgba(17,17,17,.06);transition:background .35s}
+.ticon svg{width:94%;height:94%;fill:none;stroke:#111;stroke-width:3.4;stroke-linecap:round;stroke-linejoin:round;transition:stroke .35s}
+.ticon .acc{stroke:#e8291f;transition:stroke .35s}
+.tcard:hover .ticon,.tcard:focus-visible .ticon{background:#e8291f}
+.tcard:hover .ticon svg,.tcard:focus-visible .ticon svg,.tcard:hover .ticon .acc,.tcard:focus-visible .ticon .acc{stroke:#fff}
+.tname{margin-top:clamp(22px,2.2vw,32px);font-weight:900;font-size:clamp(19px,1.5vw,25px);line-height:1.12;letter-spacing:-.02em;overflow-wrap:anywhere;min-height:2.24em;max-width:100%}
+.tmeta{margin-top:8px;font-size:clamp(14px,1.15vw,16px);font-weight:600;color:#555}
+.tgo{margin-top:auto;padding-top:clamp(18px,2vw,28px);display:inline-flex;align-items:center;gap:10px;font-weight:700;font-size:15px;color:#e8291f}
+.tgo svg{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round;transition:transform .3s}
+.tcard:hover .tgo svg{transform:translateX(6px)}
+.tnote{margin-top:clamp(24px,2.6vw,36px);font-size:15px;color:#555}
+@media (max-width:1099px){
+  .tgrid{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media (max-width:699px){
+  .tgrid{grid-template-columns:minmax(0,1fr)}
+  .tcard{display:grid;grid-template-columns:auto minmax(0,1fr);column-gap:18px;align-items:center;padding:18px}
+  .ticon{width:104px;grid-row:1/4;align-self:center}
+  .tname{margin-top:0;min-height:0;grid-column:2}
+  .tmeta{grid-column:2;margin-top:4px}
+  .tgo{grid-column:2;margin-top:10px;padding-top:0}
+}
+@media (prefers-reduced-motion:reduce){.tcard{opacity:1;transform:none}}
+
 @keyframes rise{to{transform:none}}
 @keyframes fadeUp{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
 @keyframes fadeDown{from{opacity:0;transform:translateY(-18px)}to{opacity:1;transform:none}}
@@ -184,4 +219,41 @@ h1 .ln:nth-child(3)>span{animation-delay:.39s;color:#e8291f}
 })();
 </script>
 </section>
+<section class="sec types" id="arbeitsbuehnen">
+  <div class="sec-in">
+    <p class="kicker">Unsere Arbeitsbühnen</p>
+    <h2>Welche Arbeitsbühne brauchst du?</h2>
+    <p class="lead">Such dir die Bühnenart aus und sieh dir alle Geräte mit Daten und Reichweiten an.</p>
+    <div class="tgrid">
+    <a class="tcard" href="arbeitsbuehnen.html#lkw">
+      <span class="ticon"><svg viewBox="0 0 120 120" aria-hidden="true"><path d="M12 78h70v14H12z"/><path d="M82 78V60h16l12 12v20H82"/><path d="M90 62v10h14"/><circle cx="28" cy="94" r="8"/><circle cx="96" cy="94" r="8"/><path d="M38 76 70 30"/><rect class="acc" x="68" y="14" width="26" height="18" rx="3"/><path d="M70 30l4 2"/></svg></span>
+      <span class="tname">LKW-Arbeits&shy;bühnen</span>
+      <span class="tmeta">Arbeitshöhe bis 30 m · 5 Geräte</span>
+      <span class="tgo">Geräte ansehen <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+    </a>
+    <a class="tcard" href="arbeitsbuehnen.html#raupe">
+      <span class="ticon"><svg viewBox="0 0 120 120" aria-hidden="true"><rect x="16" y="88" width="88" height="18" rx="9"/><circle cx="32" cy="97" r="3"/><circle cx="60" cy="97" r="3"/><circle cx="88" cy="97" r="3"/><rect x="34" y="70" width="52" height="18" rx="3"/><path d="M50 70V54l32-24"/><path d="M82 30l4-3"/><rect class="acc" x="80" y="12" width="24" height="17" rx="3"/></svg></span>
+      <span class="tname">Raupen&shy;arbeits&shy;bühnen</span>
+      <span class="tmeta">Arbeitshöhe bis 20 m · 2 Geräte</span>
+      <span class="tgo">Geräte ansehen <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+    </a>
+    <a class="tcard" href="arbeitsbuehnen.html#schere">
+      <span class="ticon"><svg viewBox="0 0 120 120" aria-hidden="true"><path d="M22 92h76v10H22z"/><circle cx="34" cy="106" r="5"/><circle cx="86" cy="106" r="5"/><rect class="acc" x="24" y="30" width="72" height="8" rx="2"/><path d="M28 30V14h64v16M28 22h64"/><path d="M32 38 88 64M88 38 32 64M32 64 88 92M88 64 32 92"/></svg></span>
+      <span class="tname">Scheren&shy;arbeits&shy;bühnen</span>
+      <span class="tmeta">Arbeitshöhe bis 12 m · 6 Geräte</span>
+      <span class="tgo">Geräte ansehen <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+    </a>
+    <a class="tcard" href="arbeitsbuehnen.html#teleskopmast">
+      <span class="ticon"><svg viewBox="0 0 120 120" aria-hidden="true"><path d="M26 92h68v10H26z"/><circle cx="38" cy="106" r="5"/><circle cx="82" cy="106" r="5"/><rect x="52" y="70" width="16" height="22"/><rect x="55" y="48" width="10" height="22"/><rect x="58" y="34" width="4" height="14"/><rect class="acc" x="36" y="26" width="48" height="8" rx="2"/><path d="M40 26V12h40v14M40 19h40"/></svg></span>
+      <span class="tname">Teleskop&shy;mast&shy;bühne</span>
+      <span class="tmeta">Arbeitshöhe bis 10 m · 1 Gerät</span>
+      <span class="tgo">Geräte ansehen <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+    </a>
+    </div>
+    <p class="tnote">Auf Anfrage organisieren wir dir nahezu jede verfügbare Arbeitsbühne.</p>
+  </div>
+</section>
+<script>
+(function(){var c=document.querySelectorAll('.tcard');if(!('IntersectionObserver' in window)){c.forEach(function(e){e.classList.add('in')});return;}var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){var i=[].indexOf.call(c,e.target);e.target.style.transitionDelay=(i*90)+'ms';e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:.2});c.forEach(function(e){io.observe(e)});})();
+</script>
 </body></html>
