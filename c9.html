@@ -133,14 +133,16 @@ h1 .ln:nth-child(3)>span{animation-delay:.39s;color:#e8291f}
 
 
 
-.tmore{margin-top:clamp(26px,3vw,40px);padding-top:clamp(16px,1.8vw,22px);border-top:1px solid rgba(17,17,17,.1);display:flex;align-items:center;flex-wrap:wrap;gap:10px 14px;opacity:0;transform:translateY(14px)}
+.tmore{margin-top:clamp(28px,3.2vw,46px);padding-top:clamp(20px,2.2vw,30px);border-top:1px solid rgba(17,17,17,.12);display:flex;align-items:center;flex-wrap:wrap;gap:14px clamp(12px,1.4vw,20px);opacity:0;transform:translateY(14px)}
 .tmore.in{opacity:1;transform:none;transition:opacity .7s ease,transform .7s cubic-bezier(.2,.8,.2,1)}
-.tmore-l{font-size:clamp(14px,1.1vw,15px);color:#666;margin-right:6px}
-.tchip{display:inline-flex;align-items:center;gap:8px;padding:4px 14px 4px 4px;border-radius:100px;border:1px solid rgba(17,17,17,.13);color:#111;font-weight:700;font-size:14px;transition:border-color .25s,color .25s}
+.tmore-l{flex:0 1 38ch;font-size:clamp(16px,1.3vw,19px);line-height:1.4;font-weight:600;color:#333;margin-right:clamp(4px,1vw,16px)}
+.tchip{flex:1 1 170px;display:inline-flex;align-items:center;gap:12px;padding:8px 20px 8px 8px;border-radius:100px;border:1.5px solid rgba(17,17,17,.2);color:#111;font-weight:800;font-size:clamp(16px,1.3vw,19px);transition:border-color .25s,color .25s,background .25s}
 .tchip:hover,.tchip:focus-visible{border-color:#e8291f;color:#e8291f;outline:none}
-.tchip-i{width:30px;height:30px;border-radius:50%;background:#f1f1f1;display:grid;place-items:center;flex:none}
-.tchip-i svg{width:82%;height:82%;fill:none;stroke:#111;stroke-width:4;stroke-linecap:round;stroke-linejoin:round}
+.tchip-i{width:clamp(40px,3.4vw,48px);aspect-ratio:1;border-radius:50%;background:#f1f1f1;display:grid;place-items:center;flex:none}
+.tchip-i svg{width:82%;height:82%;fill:none;stroke:#111;stroke-width:3.8;stroke-linecap:round;stroke-linejoin:round}
 .tchip-i .acc{stroke:#e8291f}
+@media (max-width:1099px){.tmore-l{flex:1 1 100%}}
+@media (max-width:699px){.tchip{flex:1 1 100%}}
 @media (prefers-reduced-motion:reduce){.tmore{opacity:1;transform:none}}
 
 @keyframes rise{to{transform:none}}
