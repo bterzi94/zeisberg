@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="de"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Zeisberg – Hero Scherenbühne (hell, responsiv)</title><style>@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&display=swap');*{box-sizing:border-box;margin:0;padding:0}
+<title>Arbeitsbühne mieten in Mönchengladbach | Zeisberg Arbeitsbühnenvermietung</title><style>@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&display=swap');*{box-sizing:border-box;margin:0;padding:0}
 html,body{height:100%}
 a{color:inherit;text-decoration:none}
 img{display:block;max-width:100%}
@@ -153,6 +153,214 @@ h1 .ln:nth-child(3)>span{animation-delay:.39s;color:#e8291f}
 @keyframes popc{from{opacity:0;transform:translate(-50%,-50%) scale(.85)}to{opacity:1;transform:translate(-50%,-50%) scale(1)}}
 @keyframes drive{from{opacity:0;transform:translateX(60px)}to{opacity:1;transform:none}}
 @media (prefers-reduced-motion:reduce){*{animation:none!important}h1 .ln>span{transform:none}}
+
+/* ===== Sections 4–11 + Footer ===== */
+html{scroll-behavior:smooth}
+.sec{scroll-margin-top:12px}
+.sec.bgg{background:#f1f1f1}
+.sec.bgk{background:#111;color:#fff}
+.sec.bgk h2,.sec.bgk h3{color:#fff}
+.sec.bgk .lead{color:rgba(255,255,255,.72)}
+.sec h3{font-weight:800;letter-spacing:-.015em;line-height:1.15}
+.rv{opacity:0;transform:translateY(22px);transition:opacity .7s ease var(--d,0s),transform .7s cubic-bezier(.2,.8,.2,1) var(--d,0s)}
+.rv.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}}
+.split{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,6fr);gap:clamp(32px,5vw,88px);align-items:center}
+.chk{flex:none;width:30px;height:30px;border-radius:50%;background:#e8291f;color:#fff;display:grid;place-items:center}
+.chk svg{width:16px;height:16px}
+
+/* 4 Warum */
+.why-img{position:relative;border-radius:clamp(22px,2.4vw,34px);overflow:hidden;aspect-ratio:4/5;box-shadow:0 26px 54px rgba(0,0,0,.2)}
+.why-img img{width:100%;height:100%;object-fit:cover;object-position:62% 50%}
+.why-badge{position:absolute;left:clamp(14px,1.6vw,24px);bottom:clamp(14px,1.6vw,24px);background:#fff;border-radius:18px;padding:12px 20px;box-shadow:0 10px 30px rgba(0,0,0,.2)}
+.why-badge b{display:block;font-size:clamp(26px,2.6vw,38px);font-weight:900;line-height:1;color:#e8291f;letter-spacing:-.03em}
+.why-badge span{font-size:13px;font-weight:700;color:#333}
+.why-list{list-style:none;margin-top:clamp(24px,2.6vw,36px);display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(16px,1.8vw,26px) clamp(20px,2.4vw,36px)}
+.why-list li{display:flex;gap:14px;align-items:flex-start}
+.why-list b{display:block;font-size:clamp(16px,1.25vw,18px);font-weight:800;line-height:1.25;margin-bottom:4px}
+.why-list div span{font-size:clamp(14px,1.1vw,16px);line-height:1.5;color:#555}
+
+/* 5 So funktioniert's */
+.steps{list-style:none;margin-top:clamp(36px,4.4vw,64px);display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:clamp(16px,2vw,32px);counter-reset:s;position:relative}
+.steps::before{content:"";position:absolute;top:30px;left:30px;right:30px;border-top:2px dashed rgba(255,255,255,.22)}
+.step{position:relative}
+.step-n{position:relative;z-index:1;display:grid;place-items:center;width:60px;height:60px;border-radius:50%;background:#e8291f;color:#fff;font-weight:900;font-size:24px;box-shadow:0 0 0 8px #111}
+.step-i{display:block;margin-top:24px;width:44px;height:44px;color:rgba(255,255,255,.9)}
+.step-i svg{width:100%;height:100%}
+.step h3{margin-top:14px;font-size:clamp(19px,1.5vw,23px)}
+.step p{margin-top:8px;font-size:clamp(14.5px,1.12vw,16px);line-height:1.55;color:rgba(255,255,255,.7);max-width:30ch}
+.sec-cta{margin-top:clamp(32px,3.6vw,52px);display:flex;flex-wrap:wrap;gap:12px}
+.btn2{display:inline-flex;align-items:center;gap:10px;height:clamp(50px,3.9vw,56px);padding:0 clamp(20px,1.9vw,30px);border-radius:100px;font-weight:700;font-size:clamp(14px,1.1vw,16px);background:#e8291f;color:#fff;transition:transform .25s,box-shadow .25s}
+.btn2:hover{transform:translateY(-2px);box-shadow:0 12px 26px rgba(232,41,31,.35)}
+.btn2 svg{width:18px;height:18px}
+.btn2.ghost{background:transparent;color:#fff;box-shadow:inset 0 0 0 1.5px rgba(255,255,255,.35)}
+.btn2.ghost:hover{box-shadow:inset 0 0 0 1.5px #fff}
+.btn2.line{background:transparent;color:#111;box-shadow:inset 0 0 0 1.5px rgba(17,17,17,.25)}
+.btn2.line:hover{box-shadow:inset 0 0 0 1.5px #111}
+
+/* 6 Service */
+.sgrid{margin-top:clamp(32px,4vw,56px);display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:clamp(14px,1.6vw,24px)}
+.scard{display:flex;flex-direction:column;padding:clamp(22px,2vw,30px);border-radius:clamp(20px,2.2vw,28px);background:#f4f4f4;border:1px solid rgba(17,17,17,.07);color:#111;transition:transform .35s cubic-bezier(.2,.8,.2,1),box-shadow .35s,background .35s,border-color .35s,opacity .7s ease var(--d,0s)}
+.scard:hover{transform:translateY(-6px);background:#fff;border-color:#e8291f;box-shadow:0 22px 44px rgba(0,0,0,.14)}
+.scard-i{width:64px;height:64px;border-radius:18px;background:#fff;color:#111;display:grid;place-items:center;transition:background .3s,color .3s}
+.scard-i svg{width:32px;height:32px}
+.scard:hover .scard-i{background:#e8291f;color:#fff}
+.scard h3{margin-top:22px;font-size:clamp(19px,1.5vw,23px)}
+.scard p{margin-top:8px;font-size:clamp(14.5px,1.12vw,16px);line-height:1.55;color:#555}
+.scard .tgo{margin-top:auto}
+
+/* 7 Für wen */
+.who{margin-top:clamp(32px,4vw,56px);display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(16px,2vw,28px)}
+.wcard{background:#fff;border-radius:clamp(22px,2.4vw,32px);overflow:hidden;display:flex;flex-direction:column;box-shadow:0 1px 0 rgba(17,17,17,.06)}
+.wcard-img{aspect-ratio:16/8;overflow:hidden;background:#ddd}
+.wcard-img img{width:100%;height:100%;object-fit:cover}
+.wcard-body{padding:clamp(22px,2.4vw,36px);display:flex;flex-direction:column;flex:1}
+.wtag{display:inline-flex;align-items:center;gap:8px;font-weight:800;font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:#e8291f}
+.wtag svg{width:20px;height:20px}
+.wcard h3{margin-top:10px;font-size:clamp(24px,2.2vw,32px)}
+.wcard p{margin-top:10px;font-size:clamp(15px,1.15vw,17px);line-height:1.55;color:#555;max-width:48ch}
+.chips{margin-top:20px;display:flex;flex-wrap:wrap;gap:8px}
+.chip{padding:9px 16px;border-radius:100px;border:1.5px solid rgba(17,17,17,.18);font-weight:700;font-size:14.5px;color:#111;transition:border-color .2s,color .2s,background .2s}
+.chip:hover{border-color:#e8291f;color:#e8291f}
+.bul{list-style:none;margin-top:20px;display:grid;gap:10px}
+.bul li{display:flex;gap:10px;align-items:center;font-weight:600;font-size:16px}
+.bul svg{flex:none;width:22px;height:22px;padding:4px;border-radius:50%;background:#e8291f;color:#fff}
+.wcard .btn2{margin-top:auto;align-self:flex-start}
+.wcard .chips,.wcard .bul{margin-bottom:26px}
+
+/* 8 Bewertungen */
+.rhead{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:20px 40px}
+.rscore{display:flex;align-items:center;gap:16px;margin-top:6px}
+.rscore .big{font-size:clamp(48px,5vw,72px);font-weight:900;line-height:1;letter-spacing:-.04em}
+.rscore .stars{display:flex;gap:2px;color:#f5a623}
+.rscore .stars svg{width:22px;height:22px}
+.rscore small{display:block;margin-top:4px;font-size:15px;font-weight:600;color:#555}
+.revs{margin-top:clamp(28px,3.4vw,48px);columns:3;column-gap:clamp(14px,1.6vw,24px)}
+.rev{break-inside:avoid;margin:0 0 clamp(14px,1.6vw,24px);padding:clamp(20px,2vw,28px);border-radius:clamp(18px,2vw,26px);background:#f4f4f4;border:1px solid rgba(17,17,17,.07)}
+.rev .stars{display:flex;gap:2px;color:#f5a623}
+.rev .stars svg{width:16px;height:16px}
+.rev blockquote{margin-top:12px;font-size:clamp(15px,1.15vw,17px);line-height:1.6;color:#222}
+.rev figcaption{margin-top:16px;display:grid;grid-template-columns:auto 1fr;column-gap:12px;align-items:center}
+.rev .av{grid-row:1/3;width:40px;height:40px;border-radius:50%;background:#111;color:#fff;display:grid;place-items:center;font-weight:800}
+.rev b{font-size:15px}
+.rev i{font-style:normal;font-size:13px;color:#777}
+.gbtn{display:inline-flex;align-items:center;gap:10px}
+
+/* 9 PartnerLIFT */
+.pl{display:grid;grid-template-columns:minmax(0,6fr) minmax(0,5fr);gap:clamp(32px,5vw,88px);align-items:center}
+.pl-logo{display:inline-block;background:#fff;border-radius:16px;padding:14px 22px;margin-bottom:22px}
+.pl-logo img{display:block;height:clamp(40px,4vw,56px);width:auto}
+.pl-list{list-style:none;margin-top:24px;display:grid;gap:12px}
+.pl-list li{display:flex;gap:12px;align-items:flex-start;font-weight:600;font-size:clamp(15px,1.2vw,17px);line-height:1.4;color:rgba(255,255,255,.9)}
+.pl-list svg{flex:none;width:24px;height:24px;padding:5px;border-radius:50%;background:#e8291f;color:#fff;margin-top:1px}
+.pl-stats{display:grid;gap:clamp(12px,1.4vw,18px)}
+.pl-stat{display:flex;align-items:baseline;justify-content:space-between;gap:16px;padding:clamp(20px,2.2vw,30px) clamp(22px,2.4vw,34px);border-radius:clamp(18px,2vw,26px);background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12)}
+.pl-stat b{font-size:clamp(34px,4.2vw,60px);font-weight:900;line-height:1;letter-spacing:-.035em;color:#fff}
+.pl-stat:first-child b{color:#e8291f}
+.pl-stat span{font-weight:700;font-size:clamp(14px,1.2vw,17px);color:rgba(255,255,255,.72);text-align:right}
+
+/* 10 FAQ */
+.faqs{display:grid;gap:12px}
+.qa{background:#fff;border-radius:clamp(16px,1.8vw,22px);overflow:hidden;box-shadow:0 1px 0 rgba(17,17,17,.06)}
+.qa summary{list-style:none;cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:clamp(16px,1.8vw,24px) clamp(18px,2vw,28px);font-weight:800;font-size:clamp(16px,1.3vw,19px);line-height:1.3}
+.qa summary::-webkit-details-marker{display:none}
+.qa summary:focus-visible{outline:2px solid #e8291f;outline-offset:-2px}
+.pm{flex:none;position:relative;width:32px;height:32px;border-radius:50%;background:#f1f1f1;transition:background .25s}
+.pm::before,.pm::after{content:"";position:absolute;left:9px;right:9px;top:15px;height:2px;border-radius:2px;background:#111;transition:transform .3s,background .25s}
+.pm::after{transform:rotate(90deg)}
+.qa[open] .pm{background:#e8291f}
+.qa[open] .pm::before,.qa[open] .pm::after{background:#fff}
+.qa[open] .pm::after{transform:rotate(0)}
+.qa-a{padding:0 clamp(18px,2vw,28px) clamp(18px,2vw,26px)}
+.qa-a p{font-size:clamp(15px,1.15vw,17px);line-height:1.6;color:#444;max-width:62ch}
+.faq-aside{margin-top:28px;padding:clamp(20px,2vw,28px);border-radius:22px;background:#111;color:#fff;max-width:420px}
+.faq-aside b{display:block;font-size:20px;font-weight:800}
+.faq-aside p{margin-top:6px;font-size:15px;line-height:1.5;color:rgba(255,255,255,.72)}
+.faq-aside .btn2{margin-top:16px}
+
+/* 11 Kontakt */
+.kgrid{margin-top:clamp(32px,4vw,56px);display:grid;grid-template-columns:minmax(0,5fr) minmax(0,6fr);gap:clamp(20px,3vw,48px);align-items:start}
+.kinfo{display:grid;gap:14px}
+.kbox{display:flex;gap:16px;align-items:flex-start;padding:clamp(18px,1.8vw,24px);border-radius:20px;background:#f4f4f4;border:1px solid rgba(17,17,17,.07)}
+.kbox>svg{flex:none;width:46px;height:46px;padding:11px;border-radius:14px;background:#fff;color:#e8291f}
+.kbox small{display:block;font-size:12.5px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:#777}
+.kbox p,.kbox a{margin-top:4px;display:block;font-weight:700;font-size:clamp(16px,1.25vw,18px);line-height:1.4;color:#111}
+.kbox a:hover{color:#e8291f}
+.kbox a.route{font-size:14.5px;color:#e8291f;margin-top:6px}
+.orte{margin-top:6px}
+.orte p{font-weight:700;font-size:15px;color:#333}
+.orte div{margin-top:10px;display:flex;flex-wrap:wrap;gap:6px}
+.orte span{font-size:13.5px;font-weight:600;color:#444;padding:6px 12px;border-radius:100px;background:#f1f1f1}
+.form{padding:clamp(22px,2.6vw,38px);border-radius:clamp(22px,2.4vw,32px);background:#111;color:#fff}
+.form h3{font-size:clamp(22px,2vw,28px);color:#fff}
+.form>p{margin-top:6px;font-size:15px;color:rgba(255,255,255,.7)}
+.frow{margin-top:16px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.fld{display:flex;flex-direction:column;gap:6px}
+.fld.w{grid-column:1/-1}
+.fld label{font-size:13px;font-weight:700;color:rgba(255,255,255,.8)}
+.fld label i{font-style:normal;color:#e8291f}
+.fld input,.fld select,.fld textarea{width:100%;font:inherit;font-size:16px;color:#fff;background:rgba(255,255,255,.08);border:1.5px solid rgba(255,255,255,.16);border-radius:14px;padding:14px 16px;transition:border-color .2s,background .2s}
+.fld select option{color:#111}
+.fld textarea{min-height:110px;resize:vertical}
+.fld input::placeholder,.fld textarea::placeholder{color:rgba(255,255,255,.4)}
+.fld input:focus,.fld select:focus,.fld textarea:focus{outline:none;border-color:#e8291f;background:rgba(255,255,255,.12)}
+.consent{margin-top:16px;display:flex;gap:12px;align-items:flex-start;font-size:13.5px;line-height:1.5;color:rgba(255,255,255,.75)}
+.consent input{flex:none;width:20px;height:20px;margin-top:1px;accent-color:#e8291f}
+.consent a{text-decoration:underline}
+.form .btn2{margin-top:20px;border:0;cursor:pointer;font-family:inherit;width:100%;justify-content:center}
+
+/* Footer */
+.foot{background:#111;color:rgba(255,255,255,.72);padding:clamp(48px,6vw,88px) var(--pad) 28px;border-top:1px solid rgba(255,255,255,.1)}
+.foot-in{max-width:1240px;margin:0 auto}
+.foot-top{display:grid;grid-template-columns:minmax(0,1.5fr) repeat(3,minmax(0,1fr));gap:clamp(28px,4vw,64px)}
+.foot-logo{display:inline-block;background:#fff;border-radius:14px;padding:10px 16px}
+.foot-logo img{display:block;height:40px;width:auto}
+.foot-about{margin-top:18px;font-size:15px;line-height:1.6;max-width:34ch}
+.foot h4{font-size:13px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:#fff}
+.foot ul{list-style:none;margin-top:16px;display:grid;gap:10px}
+.foot li{font-size:15px}
+.foot a{font-size:15px;transition:color .2s}
+.foot a:hover{color:#fff}
+.foot .tel2{color:#fff;font-weight:700}
+.foot-bot{margin-top:clamp(32px,4vw,56px);padding-top:22px;border-top:1px solid rgba(255,255,255,.12);display:flex;flex-wrap:wrap;gap:10px 28px;justify-content:space-between;align-items:flex-start;font-size:13.5px}
+.foot-credit{margin-top:6px;font-size:12.5px;color:rgba(255,255,255,.5)}
+.foot-credit a{font-size:inherit;text-decoration:underline;color:inherit}
+.foot-legal{display:flex;flex-wrap:wrap;gap:8px 22px}
+.foot-legal a{font-size:13.5px}
+
+@media (max-width:1099px){
+  .sgrid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .steps{grid-template-columns:repeat(2,minmax(0,1fr));row-gap:40px}
+  .steps::before{display:none}
+  .revs{columns:2}
+  .foot-top{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .foot-brand{grid-column:1/-1}
+}
+@media (max-width:899px){
+  .split,.pl,.kgrid,.who{grid-template-columns:minmax(0,1fr)}
+  .why-img{aspect-ratio:4/3;max-width:640px}
+  .why-img img{object-position:60% 40%}
+  .pl-stats{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .pl-stat{flex-direction:column;align-items:flex-start;gap:8px}
+  .pl-stat span{text-align:left}
+}
+@media (max-width:699px){
+  .why-list,.frow{grid-template-columns:minmax(0,1fr)}
+  .sgrid,.revs{grid-template-columns:minmax(0,1fr);columns:1}
+  .steps{grid-template-columns:minmax(0,1fr);row-gap:0;position:relative}
+  .steps::before{display:block;top:30px;bottom:30px;left:29px;right:auto;border-top:0;border-left:2px dashed rgba(255,255,255,.22)}
+  .step{display:grid;grid-template-columns:60px minmax(0,1fr);column-gap:18px;padding-bottom:30px}
+  .step:last-child{padding-bottom:0}
+  .step-n{grid-row:1/4}
+  .step-i{display:none}
+  .step h3{margin-top:2px}
+  .pl-stats{grid-template-columns:minmax(0,1fr)}
+  .pl-stat{flex-direction:row;align-items:baseline}
+  .pl-stat span{text-align:right}
+  .foot-top{grid-template-columns:minmax(0,1fr)}
+  .sec-cta .btn2{flex:1 1 100%;justify-content:center}
+  .faq-aside{max-width:none}
+}
 </style></head><body>
 <section class="hero">
 <header class="nav">
@@ -160,11 +368,11 @@ h1 .ln:nth-child(3)>span{animation-delay:.39s;color:#e8291f}
   <nav class="menu">
     <a href="#" class="active">Startseite</a>
     <a href="#">Über uns</a>
-    <a href="#">Arbeitsbühnen</a>
+    <a href="#arbeitsbuehnen">Arbeitsbühnen</a>
     <a href="#">Mietgeräte für Bau &amp; Garten</a>
     <a href="#" class="has-dd">Service<svg width="10" height="6" viewBox="0 0 10 6"><path d="M1 1l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
     <a href="#" class="has-dd">Einsatzbeispiele<svg width="10" height="6" viewBox="0 0 10 6"><path d="M1 1l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
-    <a href="#">Kontakt</a>
+    <a href="#kontakt">Kontakt</a>
   </nav>
   <a class="tel" href="tel:+491779582309"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8a15.1 15.1 0 006.6 6.6l2.2-2.2a1 1 0 011-.25 11.4 11.4 0 003.6.57 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.45.57 3.6a1 1 0 01-.25 1z"/></svg>0177 9582309</a>
   <button class="burger" id="burger" aria-label="Menü öffnen" aria-expanded="false"><span></span><span></span><span></span></button>
@@ -172,9 +380,9 @@ h1 .ln:nth-child(3)>span{animation-delay:.39s;color:#e8291f}
 <div class="main">
   <div class="content">
     <h1><span class="ln"><span>Arbeitsbühnen</span></span><span class="ln"><span>mieten in</span></span><span class="ln"><span>Mönchengladbach</span></span></h1>
-    <p class="sub">Gepflegte Bühnen, persönliche Einweisung und Bedienerschulung nach DGUV 308-008. Für Gewerbe und Privat.</p><div class="btns"><a class="btn primary" href="#">Jetzt anfragen</a><a class="btn secondary" href="#">Arbeitsbühnen ansehen</a></div>
+    <p class="sub">Gepflegte Bühnen, persönliche Einweisung und Bedienerschulung nach DGUV 308-008. Für Gewerbe und Privat.</p><div class="btns"><a class="btn primary" href="#kontakt">Jetzt anfragen</a><a class="btn secondary" href="#arbeitsbuehnen">Arbeitsbühnen ansehen</a></div>
     <div class="trust">
-  <div class="google"><span class="g"><svg width="20" height="20" viewBox="0 0 48 48"><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/><path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/></svg></span><div class="rating"><div class="top"><b class="score">5,0</b><span class="stars"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.3 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"/></svg><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.3 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"/></svg><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.3 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"/></svg><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.3 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"/></svg><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.3 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"/></svg></span></div><span class="glabel">40 Bewertungen</span></div></div>
+  <div class="google"><span class="g"><svg width="20" height="20" viewBox="0 0 48 48"><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/><path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/></svg></span><div class="rating"><div class="top"><b class="score">5,0</b><span class="stars"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.3 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"/></svg><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.3 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"/></svg><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.3 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"/></svg><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.3 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"/></svg><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.3 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"/></svg></span></div><span class="glabel">41 Bewertungen</span></div></div>
   <div class="partner"><img src="img/Logo_PartnerLIFT.png" alt="PartnerLIFT Verbund"></div>
 </div>
   </div>
@@ -275,5 +483,180 @@ h1 .ln:nth-child(3)>span{animation-delay:.39s;color:#e8291f}
 </section>
 <script>
 (function(){var c=document.querySelectorAll('.tcard,.tmore');if(!('IntersectionObserver' in window)){c.forEach(function(e){e.classList.add('in')});return;}var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){var i=[].indexOf.call(e.target.parentNode.children,e.target);e.target.style.transitionDelay=(i*90)+'ms';e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:.2});c.forEach(function(e){io.observe(e)});})();
+</script>
+<section class="sec bgg" id="warum">
+  <div class="sec-in split">
+    <div class="why-img rv"><img src="img/buehne-himmel.jpg" alt="Rote Arbeitsbühne von Zeisberg im Einsatz in den Bäumen" loading="lazy" width="1400" height="1050"><div class="why-badge"><b>Seit 2011</b><span>Arbeitsbühnen in Mönchengladbach</span></div></div>
+    <div>
+      <p class="kicker">Warum Zeisberg</p>
+      <h2>Warum bei Zeisberg mieten?</h2>
+      <p class="lead">Familienbetrieb aus Hardt: persönlich, fair und mit Geräten, auf die du dich verlassen kannst.</p>
+      <ul class="why-list"><li class="rv"><span class="chk"><svg class="" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><div><b>Persönliche, kompetente Beratung</b><span>Wir hören zu und empfehlen dir die Bühne, die zu deinem Einsatz passt.</span></div></li><li class="rv"><span class="chk"><svg class="" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><div><b>Erfahrung seit 2011</b><span>Seit über zehn Jahren vermieten wir Arbeitsbühnen in Mönchengladbach und Umgebung.</span></div></li><li class="rv"><span class="chk"><svg class="" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><div><b>Gepflegt und regelmäßig gewartet</b><span>Alle Geräte werden fachgerecht gewartet und sind in einem gepflegten Zustand.</span></div></li><li class="rv"><span class="chk"><svg class="" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><div><b>Für Gewerbe und Privat</b><span>Ob Handwerksbetrieb oder Hausbesitzer: Bei uns bist du richtig.</span></div></li><li class="rv"><span class="chk"><svg class="" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><div><b>Ausführliche Einweisung</b><span>Du bekommst eine persönliche Einweisung in die Bedienung, bevor du loslegst.</span></div></li><li class="rv"><span class="chk"><svg class="" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><div><b>Lieferung und Abholung</b><span>Auf Wunsch liefern wir die Bühne zu dir und holen sie wieder ab.</span></div></li></ul>
+    </div>
+  </div>
+</section>
+
+<section class="sec bgk" id="ablauf">
+  <div class="sec-in">
+    <p class="kicker">So funktioniert's</p>
+    <h2>In vier Schritten zur Bühne</h2>
+    <p class="lead">Von der Anfrage bis zum Einsatz: einfach und ohne Papierkram-Chaos.</p>
+    <ol class="steps"><li class="step rv"><span class="step-n">1</span><span class="step-i"><svg class="" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg></span><h3>Anfragen</h3><p>Ruf an oder schreib uns kurz, wofür du die Bühne brauchst und wann.</p></li><li class="step rv"><span class="step-n">2</span><span class="step-i"><svg class="" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a8.5 8.5 0 0 1-12.6 7.4L3 21l1.6-5A8.5 8.5 0 1 1 21 12z"/><path d="M8.5 11h7M8.5 14.5h4"/></svg></span><h3>Beratung</h3><p>Wir empfehlen dir die passende Bühne für Höhe, Untergrund und Einsatzort.</p></li><li class="step rv"><span class="step-n">3</span><span class="step-i"><svg class="" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 5h12v11H2zM14 9h4.5l3.5 3.5V16h-8"/><circle cx="6.5" cy="17.5" r="2"/><circle cx="17.5" cy="17.5" r="2"/></svg></span><h3>Abholen oder liefern lassen</h3><p>Du holst die Bühne bei uns in Hardt ab oder wir bringen sie zu dir.</p></li><li class="step rv"><span class="step-n">4</span><span class="step-i"><svg class="" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M6 21v-3h12v3M8 18l8-6M16 18L8 12M8 12l8-6M16 12L8 6"/><path d="M6 6h12V3H6z"/></svg></span><h3>Einweisung und los</h3><p>Wir weisen dich in die Bedienung ein. Dann kannst du loslegen.</p></li></ol>
+    <div class="sec-cta"><a class="btn2" href="#kontakt">Jetzt anfragen <svg class="" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><a class="btn2 ghost" href="tel:+491779582309"><svg class="" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg> 0177 9582309</a></div>
+  </div>
+</section>
+
+<section class="sec" id="service">
+  <div class="sec-in">
+    <p class="kicker">Service</p>
+    <h2>Mehr als nur Vermietung</h2>
+    <p class="lead">Wir helfen dir, sicher und rechtssicher zu arbeiten, nicht nur mit der passenden Bühne.</p>
+    <div class="sgrid"><a class="scard rv" href="baustellenabsicherung.html"><span class="scard-i"><svg class="" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3L6.5 19h11z"/><path d="M8.6 13h6.8M4 21h16M9.5 8h5"/></svg></span><h3>Baustellenabsicherung</h3><p>Sicher arbeiten im Straßenraum: Wir sichern deine Baustelle ab.</p><span class="tgo">Mehr erfahren <svg class="" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a><a class="scard rv" href="bedienerschulung.html"><span class="scard-i"><svg class="" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10L12 5 2 10l10 5z"/><path d="M6 12.2V17c3 2.4 9 2.4 12 0v-4.8M22 10v6"/></svg></span><h3>Bedienerschulung</h3><p>Qualifiziert bedienen: Schulung für Arbeitsbühnen nach DGUV 308-008.</p><span class="tgo">Mehr erfahren <svg class="" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a><a class="scard rv" href="einweisung.html"><span class="scard-i"><svg class="" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 4H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-3"/><path d="M9 2h6v4H9z"/><path d="M8.5 14l2.5 2.5 4.5-5"/></svg></span><h3>Einweisung</h3><p>Persönliche Einweisung in dein Mietgerät, bevor du startest.</p><span class="tgo">Mehr erfahren <svg class="" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a><a class="scard rv" href="psaga-pruefung.html"><span class="scard-i"><svg class="" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></svg></span><h3>Prüfung von PSAgA</h3><p>Prüfung deiner persönlichen Schutzausrüstung gegen Absturz.</p><span class="tgo">Mehr erfahren <svg class="" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></div>
+  </div>
+</section>
+
+<section class="sec bgg" id="fuer-wen">
+  <div class="sec-in">
+    <p class="kicker">Für wen</p>
+    <h2>Für Profis und für zu Hause</h2>
+    <p class="lead">Egal, ob du täglich in der Höhe arbeitest oder einmal im Jahr: Wir haben die passende Bühne.</p>
+    <div class="who">
+      <article class="wcard rv">
+        <div class="wcard-body">
+          <span class="wtag"><svg class="" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a4 4 0 0 0 5 5L22 13.5 18 17.5 14 13.5l-9 9-3-3 9-9-2-2a4 4 0 0 1 5-5z"/></svg> Einsatzbeispiele</span>
+          <h3>Für Handwerker</h3>
+          <p>Schneller und flexibler als ein Gerüst: Such dein Gewerk aus und sieh, welche Bühne dazu passt.</p>
+          <div class="chips"><a class="chip" href="einsatzbeispiele/baumfaeller.html">Baumfäller</a><a class="chip" href="einsatzbeispiele/dachdecker.html">Dachdecker</a><a class="chip" href="einsatzbeispiele/elektriker.html">Elektriker</a><a class="chip" href="einsatzbeispiele/fenster-rollladenbauer.html">Fenster- und Rollladenbauer</a><a class="chip" href="einsatzbeispiele/fugenversiegelung.html">Fugenversiegelung</a><a class="chip" href="einsatzbeispiele/gebaeudereiniger.html">Gebäudereiniger</a><a class="chip" href="einsatzbeispiele/malerbetriebe.html">Malerbetriebe</a><a class="chip" href="einsatzbeispiele/werbetechniker.html">Werbetechniker</a><a class="chip" href="einsatzbeispiele/sonstige-gewerke.html">Sonstige Gewerke</a></div>
+          <a class="btn2 line" href="einsatzbeispiele/handwerker.html">Alle Gewerke ansehen <svg class="" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+      </article>
+      <article class="wcard rv" style="--d:.1s">
+        <div class="wcard-img"><img src="img/lkw-buehne.jpg" alt="LKW-Arbeitsbühne von Zeisberg beim Heckenschnitt" loading="lazy" width="1024" height="768"></div>
+        <div class="wcard-body">
+          <span class="wtag"><svg class="" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l9-8 9 8"/><path d="M5 10v11h14V10"/><path d="M10 21v-6h4v6"/></svg> Einsatzbeispiele</span>
+          <h3>Für Privatleute</h3>
+          <p>Du brauchst die Bühne nur einmal? Kein Problem. Wir beraten dich und weisen dich ein.</p>
+          <ul class="bul"><li><svg class="" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Hecke und Baum schneiden</li><li><svg class="" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Dach, Rinne und Fassade</li><li><svg class="" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Fenster und Rollläden</li><li><svg class="" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Streichen in der Höhe</li></ul>
+          <a class="btn2 line" href="einsatzbeispiele/privatleute.html">Typische Einsätze ansehen <svg class="" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="bewertungen">
+  <div class="sec-in">
+    <div class="rhead">
+      <div>
+        <p class="kicker">Bewertungen</p>
+        <h2>Das sagen unsere Kunden</h2>
+        <div class="rscore"><span class="big">5,0</span><div><div class="stars"><svg class="" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.3 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z" fill="currentColor" stroke="none"/></svg><svg class="" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.3 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z" fill="currentColor" stroke="none"/></svg><svg class="" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.3 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z" fill="currentColor" stroke="none"/></svg><svg class="" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.3 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z" fill="currentColor" stroke="none"/></svg><svg class="" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.3 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z" fill="currentColor" stroke="none"/></svg></div><small>41 Google-Bewertungen</small></div></div>
+      </div>
+      <a class="btn2 line gbtn" href="https://www.google.com/search?q=Zeisberg+Arbeitsb%C3%BChnenvermietung+M%C3%B6nchengladbach" target="_blank" rel="noopener"><svg width="26" height="26" viewBox="0 0 48 48"><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/><path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/></svg> Alle Bewertungen auf Google</a>
+    </div>
+    <div class="revs"><figure class="rev rv"><div class="stars"><svg class="" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.3 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z" fill="currentColor" stroke="none"/></svg><svg class="" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.3 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z" fill="currentColor" stroke="none"/></svg><svg class="" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.3 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z" fill="currentColor" stroke="none"/></svg><svg class="" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.3 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z" fill="currentColor" stroke="none"/></svg><svg class="" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.3 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z" fill="currentColor" stroke="none"/></svg></div><blockquote>Ich bin absolut zufrieden mit der Firma Zeisberg Arbeitsbühnenvermietung! Der gesamte Ablauf – von der Beratung bis zur Rückgabe – war professionell, freundlich und zuverlässig. Die Mitarbeiter sind sehr kompetent und haben mir genau das passende Gerät für mein Projekt empfohlen. Auch die Einweisung war klar und hilfreich.</blockquote><figcaption><span class="av">S</span><b>Salva D.</b><i>Google-Bewertung</i></figcaption></figure><figure class="rev rv"><div class="stars"><svg class="" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.3 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z" fill="currentColor" stroke="none"/></svg><svg class="" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.3 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z" fill="currentColor" stroke="none"/></svg><svg class="" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.3 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z" fill="currentColor" stroke="none"/></svg><svg class="" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.3 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z" fill="currentColor" stroke="none"/></svg><svg class="" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.3 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z" fill="currentColor" stroke="none"/></svg></div><blockquote>Super nettes und sympathisches Familienunternehmen. Vermietung ging schnell und Kundenservice war super. Beim nächsten großen Projekt auf jeden Fall wieder!</blockquote><figcaption><span class="av">J</span><b>Jakob W.</b><i>Google-Bewertung</i></figcaption></figure><figure class="rev rv"><div class="stars"><svg class="" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.3 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z" fill="currentColor" stroke="none"/></svg><svg class="" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.3 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z" fill="currentColor" stroke="none"/></svg><svg class="" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.3 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z" fill="currentColor" stroke="none"/></svg><svg class="" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.3 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z" fill="currentColor" stroke="none"/></svg><svg class="" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.3 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z" fill="currentColor" stroke="none"/></svg></div><blockquote>Wir von UPHOFF ARBEITSBÜHNEN können die Zeisberg Arbeitsbühnenvermietung wiederholt als freundlichen und kompetenten Geschäftspartner voll und ganz empfehlen.</blockquote><figcaption><span class="av">A</span><b>Arne U.</b><i>Google-Bewertung</i></figcaption></figure><figure class="rev rv"><div class="stars"><svg class="" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.3 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z" fill="currentColor" stroke="none"/></svg><svg class="" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.3 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z" fill="currentColor" stroke="none"/></svg><svg class="" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.3 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z" fill="currentColor" stroke="none"/></svg><svg class="" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.3 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z" fill="currentColor" stroke="none"/></svg><svg class="" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.3 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z" fill="currentColor" stroke="none"/></svg></div><blockquote>Sehr freundliche, kompetente und sicherheitsorientierte Beratung. Sehr guter Maschinenpark, einfacher Mietvorgang. Wirklich top.</blockquote><figcaption><span class="av">U</span><b>Udo D.</b><i>Google-Bewertung</i></figcaption></figure><figure class="rev rv"><div class="stars"><svg class="" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.3 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z" fill="currentColor" stroke="none"/></svg><svg class="" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.3 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z" fill="currentColor" stroke="none"/></svg><svg class="" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.3 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z" fill="currentColor" stroke="none"/></svg><svg class="" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.3 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z" fill="currentColor" stroke="none"/></svg><svg class="" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.3 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z" fill="currentColor" stroke="none"/></svg></div><blockquote>Absolut top! Mehrfach Bagger, Kettenbühnen und Arbeitsbühnen für die Firma gemietet. Immer freundlich und fair!</blockquote><figcaption><span class="av">J</span><b>Jörg F.</b><i>Google-Bewertung</i></figcaption></figure><figure class="rev rv"><div class="stars"><svg class="" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.3 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z" fill="currentColor" stroke="none"/></svg><svg class="" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.3 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z" fill="currentColor" stroke="none"/></svg><svg class="" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.3 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z" fill="currentColor" stroke="none"/></svg><svg class="" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.3 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z" fill="currentColor" stroke="none"/></svg><svg class="" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.3 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z" fill="currentColor" stroke="none"/></svg></div><blockquote>Nettes Team, gute Maschine, fairer Preis.</blockquote><figcaption><span class="av">R</span><b>Ralf M.</b><i>Google-Bewertung</i></figcaption></figure><figure class="rev rv"><div class="stars"><svg class="" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.3 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z" fill="currentColor" stroke="none"/></svg><svg class="" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.3 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z" fill="currentColor" stroke="none"/></svg><svg class="" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.3 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z" fill="currentColor" stroke="none"/></svg><svg class="" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.3 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z" fill="currentColor" stroke="none"/></svg><svg class="" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.3 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z" fill="currentColor" stroke="none"/></svg></div><blockquote>Bin immer wieder froh, dort gelandet zu sein. Brauche für mein Gewerbe die unterschiedlichsten Maschinen. Immer nett, kompetent und zuverlässig!</blockquote><figcaption><span class="av">J</span><b>Jan T.</b><i>Google-Bewertung</i></figcaption></figure><figure class="rev rv"><div class="stars"><svg class="" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.3 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z" fill="currentColor" stroke="none"/></svg><svg class="" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.3 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z" fill="currentColor" stroke="none"/></svg><svg class="" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.3 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z" fill="currentColor" stroke="none"/></svg><svg class="" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.3 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z" fill="currentColor" stroke="none"/></svg><svg class="" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.3 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z" fill="currentColor" stroke="none"/></svg></div><blockquote>Netter, freundlicher Kontakt mit ausführlicher Einweisung. Gutes Preis-Leistungs-Verhältnis.</blockquote><figcaption><span class="av">G</span><b>Günter K.</b><i>Google-Bewertung</i></figcaption></figure></div>
+  </div>
+</section>
+
+<section class="sec bgk" id="partnerlift">
+  <div class="sec-in pl">
+    <div>
+      <p class="kicker">Unser Netzwerk</p>
+      <span class="pl-logo rv" style="display:block;width:max-content;margin-top:14px"><img src="img/Logo_PartnerLIFT.png" alt="PartnerLIFT" loading="lazy"></span>
+      <h2>Stark vernetzt mit PartnerLIFT</h2>
+      <p class="lead">Als Partner im PartnerLIFT-Vermietnetzwerk greifen wir auf einen gemeinsamen Gerätepool zu. So steht für nahezu jeden Einsatz das passende Gerät bereit, flexibel, zuverlässig und deutschlandweit.</p>
+      <ul class="pl-list"><li><svg class="" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Hohe Verfügbarkeit in Deutschland und Europa</li><li><svg class="" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Große Auswahl an Arbeitsbühnen, Baumaschinen, Kranen und Staplern</li><li><svg class="" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Flexibel und zuverlässig für nahezu jeden Einsatz</li></ul>
+    </div>
+    <div class="pl-stats"><div class="pl-stat rv"><b>150+</b><span>Mietstationen</span></div><div class="pl-stat rv"><b>15.000+</b><span>Mietgeräte</span></div><div class="pl-stat rv"><b>DE & EU</b><span>Verfügbarkeit</span></div></div>
+  </div>
+</section>
+
+<section class="sec bgg" id="faq">
+  <div class="sec-in split" style="grid-template-columns:minmax(0,4fr) minmax(0,7fr);align-items:start">
+    <div>
+      <p class="kicker">FAQ</p>
+      <h2>Häufige Fragen</h2>
+      <p class="lead">Die wichtigsten Antworten rund um die Miete einer Arbeitsbühne.</p>
+      <div class="faq-aside rv"><b>Deine Frage ist nicht dabei?</b><p>Ruf uns einfach an. Wir beraten dich persönlich.</p><a class="btn2" href="tel:+491779582309"><svg class="" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg> 0177 9582309</a></div>
+    </div>
+    <div class="faqs"><details class="qa rv"><summary>Vermietet ihr an Privatleute oder nur an Firmen?<span class="pm" aria-hidden="true"></span></summary><div class="qa-a"><p>Beides. Wir vermieten an Gewerbe- und Privatkunden. Du musst kein Betrieb sein, um bei uns eine Arbeitsbühne zu mieten.</p></div></details><details class="qa rv"><summary>Wie finde ich die passende Arbeitsbühne?<span class="pm" aria-hidden="true"></span></summary><div class="qa-a"><p>Sag uns, wie hoch du kommen musst, wo die Bühne stehen soll und worauf sie steht. Wir beraten dich persönlich und empfehlen dir das passende Gerät.</p></div></details><details class="qa rv"><summary>Bekomme ich eine Einweisung?<span class="pm" aria-hidden="true"></span></summary><div class="qa-a"><p>Ja. Bei der Übergabe weisen wir dich ausführlich in die Bedienung ein. Auf Wunsch bieten wir auch eine Bedienerschulung an.</p></div></details><details class="qa rv"><summary>Könnt ihr die Bühne liefern und abholen?<span class="pm" aria-hidden="true"></span></summary><div class="qa-a"><p>Ja, Lieferung und Abholung sind flexibel möglich. Sprich uns einfach auf deinen Termin und Einsatzort an.</p></div></details><details class="qa rv"><summary>Was kostet die Miete?<span class="pm" aria-hidden="true"></span></summary><div class="qa-a"><p>Der Preis hängt vom Gerät und von der Mietdauer ab. Ruf an oder schreib uns, dann bekommst du ein Angebot für deinen Einsatz.</p></div></details><details class="qa rv"><summary>In welchen Orten seid ihr unterwegs?<span class="pm" aria-hidden="true"></span></summary><div class="qa-a"><p>Wir bedienen Mönchengladbach und die Umgebung, zum Beispiel Viersen, Korschenbroich, Krefeld, Erkelenz, Grevenbroich und Heinsberg.</p></div></details><details class="qa rv"><summary>Was, wenn du ein Gerät brauchst, das bei euch nicht steht?<span class="pm" aria-hidden="true"></span></summary><div class="qa-a"><p>Auf Anfrage organisieren wir dir nahezu jede verfügbare Arbeitsbühne. Als PartnerLIFT-Partner greifen wir dafür auf einen großen Gerätepool zu.</p></div></details></div>
+  </div>
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Vermietet ihr an Privatleute oder nur an Firmen?", "acceptedAnswer": {"@type": "Answer", "text": "Beides. Wir vermieten an Gewerbe- und Privatkunden. Du musst kein Betrieb sein, um bei uns eine Arbeitsbühne zu mieten."}}, {"@type": "Question", "name": "Wie finde ich die passende Arbeitsbühne?", "acceptedAnswer": {"@type": "Answer", "text": "Sag uns, wie hoch du kommen musst, wo die Bühne stehen soll und worauf sie steht. Wir beraten dich persönlich und empfehlen dir das passende Gerät."}}, {"@type": "Question", "name": "Bekomme ich eine Einweisung?", "acceptedAnswer": {"@type": "Answer", "text": "Ja. Bei der Übergabe weisen wir dich ausführlich in die Bedienung ein. Auf Wunsch bieten wir auch eine Bedienerschulung an."}}, {"@type": "Question", "name": "Könnt ihr die Bühne liefern und abholen?", "acceptedAnswer": {"@type": "Answer", "text": "Ja, Lieferung und Abholung sind flexibel möglich. Sprich uns einfach auf deinen Termin und Einsatzort an."}}, {"@type": "Question", "name": "Was kostet die Miete?", "acceptedAnswer": {"@type": "Answer", "text": "Der Preis hängt vom Gerät und von der Mietdauer ab. Ruf an oder schreib uns, dann bekommst du ein Angebot für deinen Einsatz."}}, {"@type": "Question", "name": "In welchen Orten seid ihr unterwegs?", "acceptedAnswer": {"@type": "Answer", "text": "Wir bedienen Mönchengladbach und die Umgebung, zum Beispiel Viersen, Korschenbroich, Krefeld, Erkelenz, Grevenbroich und Heinsberg."}}, {"@type": "Question", "name": "Was, wenn du ein Gerät brauchst, das bei euch nicht steht?", "acceptedAnswer": {"@type": "Answer", "text": "Auf Anfrage organisieren wir dir nahezu jede verfügbare Arbeitsbühne. Als PartnerLIFT-Partner greifen wir dafür auf einen großen Gerätepool zu."}}]}</script>
+</section>
+
+<section class="sec" id="kontakt">
+  <div class="sec-in">
+    <p class="kicker">Kontakt</p>
+    <h2>Schreib uns oder ruf an</h2>
+    <p class="lead">Sag uns kurz, was du vorhast. Wir melden uns schnell bei dir mit der passenden Bühne.</p>
+    <div class="kgrid">
+      <div class="kinfo">
+        <div class="kbox rv"><svg class="" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg><div><small>Telefon</small><a href="tel:+491779582309">0177 9582309</a><a href="tel:+491741655526">0174 1655526</a></div></div>
+        <div class="kbox rv"><svg class="" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 5h18v14H3z"/><path d="M3 6.5l9 6.5 9-6.5"/></svg><div><small>E-Mail</small><a href="mailto:info@zeisberg-arbeitsbuehnen.de">info@zeisberg-arbeitsbuehnen.de</a></div></div>
+        <div class="kbox rv"><svg class="" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 12.5-9 12.5S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><div><small>Betriebshof (Abholung)</small><p>Tomphecke 20, Industriegebiet<br>41169 Mönchengladbach-Hardt</p><a class="route" href="https://www.google.com/maps/search/?api=1&query=Tomphecke+20+41169+M%C3%B6nchengladbach" target="_blank" rel="noopener">Route planen →</a></div></div>
+        <div class="kbox rv"><svg class="" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l9-8 9 8"/><path d="M5 10v11h14V10"/><path d="M10 21v-6h4v6"/></svg><div><small>Büro</small><p>An der Nikolauskapelle 18<br>41169 Mönchengladbach</p></div></div>
+        <div class="orte rv"><p>Wir sind für dich unterwegs in:</p><div><span>Mönchengladbach</span><span>Niederkrüchten</span><span>Brüggen</span><span>Wegberg</span><span>Erkelenz</span><span>Hückelhoven</span><span>Heinsberg</span><span>Schwalmtal</span><span>Grevenbroich</span><span>Korschenbroich</span><span>Viersen</span><span>Nettetal</span><span>Tönisvorst</span><span>Kempen</span><span>Krefeld</span></div></div>
+      </div>
+      <form class="form rv" id="anfrage" novalidate>
+        <h3>Anfrage senden</h3>
+        <p>Felder mit <i style="font-style:normal;color:#e8291f">*</i> sind Pflicht.</p>
+        <div class="frow">
+          <div class="fld"><label for="f-name">Name <i>*</i></label><input id="f-name" name="name" autocomplete="name" required></div>
+          <div class="fld"><label for="f-mail">E-Mail <i>*</i></label><input id="f-mail" name="mail" type="email" autocomplete="email" required></div>
+          <div class="fld"><label for="f-tel">Telefon</label><input id="f-tel" name="tel" type="tel" autocomplete="tel"></div>
+          <div class="fld"><label for="f-typ">Gewünschtes Gerät</label><select id="f-typ" name="typ"><option>Ich bin mir noch unsicher</option><option>LKW-Arbeitsbühne</option><option>Raupenarbeitsbühne</option><option>Scherenarbeitsbühne</option><option>Teleskopmastbühne</option><option>Mietgerät für Bau &amp; Garten</option></select></div>
+          <div class="fld"><label for="f-von">Von</label><input id="f-von" name="von" type="date"></div>
+          <div class="fld"><label for="f-bis">Bis</label><input id="f-bis" name="bis" type="date"></div>
+          <div class="fld w"><label for="f-msg">Nachricht</label><textarea id="f-msg" name="msg" placeholder="Wie hoch musst du kommen? Wo soll die Bühne stehen?"></textarea></div>
+        </div>
+        <label class="consent"><input type="checkbox" id="f-ds" required><span>Ich habe die <a href="datenschutz.html">Datenschutzerklärung</a> gelesen und bin einverstanden. <i style="font-style:normal;color:#e8291f">*</i></span></label>
+        <button class="btn2" type="submit">Anfrage senden <svg class="" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+        <p id="f-msgout" style="margin-top:12px;font-size:14px;color:#ffb3ae" role="alert"></p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer class="foot">
+  <div class="foot-in">
+    <div class="foot-top">
+      <div class="foot-brand">
+        <a class="foot-logo" href="#"><img src="img/Logopng.png" alt="Zeisberg Arbeitsbühnenvermietung"></a>
+        <p class="foot-about">Arbeitsbühnen und Mietgeräte für Mönchengladbach und Umgebung. Seit 2011, für Gewerbe und Privat.</p>
+      </div>
+      <div><h4>Mieten</h4><ul><li><a href="arbeitsbuehnen.html">Arbeitsbühnen</a></li><li><a href="mietgeraete.html">Mietgeräte für Bau &amp; Garten</a></li><li><a href="ueber-uns.html">Über uns</a></li><li><a href="#kontakt">Kontakt</a></li></ul></div>
+      <div><h4>Service</h4><ul><li><a href="baustellenabsicherung.html">Baustellenabsicherung</a></li><li><a href="bedienerschulung.html">Bedienerschulung</a></li><li><a href="einweisung.html">Einweisung</a></li><li><a href="psaga-pruefung.html">Prüfung von PSAgA</a></li></ul></div>
+      <div><h4>Kontakt</h4><ul><li><a class="tel2" href="tel:+491779582309">0177 9582309</a></li><li><a class="tel2" href="tel:+491741655526">0174 1655526</a></li><li><a href="mailto:info@zeisberg-arbeitsbuehnen.de">info@zeisberg-arbeitsbuehnen.de</a></li><li>Tomphecke 20<br>41169 Mönchengladbach-Hardt</li></ul></div>
+    </div>
+    <div class="foot-bot">
+      <div><div>© 2026 Zeisberg Arbeitsbühnenvermietung</div><div class="foot-credit">Webdesign &amp; Local SEO: <a href="https://burakterzi.de/" target="_blank" rel="noopener">burakterzi.de</a></div></div>
+      <nav class="foot-legal" aria-label="Rechtliches"><a href="agb.html">AGB / Mietbedingungen</a><a href="impressum.html">Impressum</a><a href="datenschutz.html">Datenschutzerklärung</a></nav>
+    </div>
+  </div>
+</footer>
+<script>
+(function(){
+  var els=document.querySelectorAll('.rv');
+  if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in')});}
+  else{
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:.12,rootMargin:'0px 0px -6% 0px'});
+    document.querySelectorAll('.rv').forEach(function(e){
+      if(!e.style.getPropertyValue('--d')){var sib=e.parentNode.children,i=Array.prototype.indexOf.call(sib,e);e.style.setProperty('--d',Math.min(i,5)*.08+'s');}
+      io.observe(e);
+    });
+  }
+  /* Formular: öffnet das Mailprogramm mit vorbefüllter Anfrage (Backend folgt) */
+  var f=document.getElementById('anfrage'),out=document.getElementById('f-msgout');
+  f.addEventListener('submit',function(ev){
+    ev.preventDefault();
+    var v=function(id){return document.getElementById(id).value.trim();};
+    if(!v('f-name')||!v('f-mail')){out.textContent='Bitte gib Name und E-Mail an.';return;}
+    if(!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(v('f-mail'))){out.textContent='Bitte gib eine gültige E-Mail-Adresse an.';return;}
+    if(!document.getElementById('f-ds').checked){out.textContent='Bitte stimme der Datenschutzerklärung zu.';return;}
+    out.textContent='';
+    var body='Name: '+v('f-name')+'\nE-Mail: '+v('f-mail')+'\nTelefon: '+v('f-tel')+'\nGerät: '+v('f-typ')+'\nZeitraum: '+v('f-von')+' bis '+v('f-bis')+'\n\n'+v('f-msg');
+    location.href='mailto:info@zeisberg-arbeitsbuehnen.de?subject='+encodeURIComponent('Anfrage Arbeitsbühne')+'&body='+encodeURIComponent(body);
+  });
+})();
 </script>
 </body></html>
