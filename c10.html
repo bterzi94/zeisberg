@@ -483,9 +483,10 @@ h1 .ln:nth-child(3)>span{color:var(--R)}
 .wcard{border-radius:8px;box-shadow:0 2px 12px rgba(0,0,0,.12)}
 .wcard-img{aspect-ratio:16/8}
 .wcard-body{position:relative}
-.wbig{position:absolute;right:clamp(20px,2.4vw,36px);top:clamp(20px,2.4vw,36px);width:clamp(52px,5vw,72px);height:clamp(52px,5vw,72px);color:var(--R)}
-.wcard h3{font-size:clamp(28px,2.6vw,38px);font-weight:700;margin-top:0;padding-right:84px}
-.wcard p{font-size:clamp(16px,1.25vw,18px);color:#4a4a48}
+.whead{display:flex;align-items:center;justify-content:space-between;gap:16px}
+.wbig{flex:none;width:clamp(30px,2.6vw,40px);height:clamp(30px,2.6vw,40px);color:var(--R)}
+.wcard h3{font-size:clamp(28px,2.6vw,38px);font-weight:700;margin:0;line-height:1.05}
+.wcard p{font-size:clamp(16px,1.25vw,18px);color:#4a4a48;margin-top:14px}
 .sq{list-style:none;margin-top:18px;display:grid;gap:10px}
 .sq li{position:relative;padding-left:22px;font-weight:600;font-size:clamp(16px,1.25vw,18px)}
 .sq li::before{content:"";position:absolute;left:0;top:.55em;width:8px;height:8px;background:var(--R)}
@@ -752,8 +753,7 @@ h1 .ln:nth-child(3)>span{color:var(--R)}
       <article class="wcard rv">
         <div class="wcard-img"><img src="img/foto-lkw-fassade.jpg" alt="Rote LKW-Arbeitsbühne im Einsatz an einer Fassade" loading="lazy" width="1600" height="1200"></div>
         <div class="wcard-body">
-          <svg class="wbig" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a4 4 0 0 0 5 5L22 13.5 18 17.5 14 13.5l-9 9-3-3 9-9-2-2a4 4 0 0 1 5-5z"/></svg>
-          <h3>Für Handwerker</h3>
+          <div class="whead"><h3>Für Handwerker</h3><svg class="wbig" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a4 4 0 0 0 5 5L22 13.5 18 17.5 14 13.5l-9 9-3-3 9-9-2-2a4 4 0 0 1 5-5z"/></svg></div>
           <p>Schneller und flexibler als ein Gerüst: Such dein Gewerk aus und sieh, welche Bühne dazu passt.</p>
           <div class="chips"><a class="chip" href="einsatzbeispiele/baumfaeller.html">Baumfäller</a><a class="chip" href="einsatzbeispiele/dachdecker.html">Dachdecker</a><a class="chip" href="einsatzbeispiele/elektriker.html">Elektriker</a><a class="chip" href="einsatzbeispiele/fenster-rollladenbauer.html">Fenster- und Rollladenbauer</a><a class="chip" href="einsatzbeispiele/fugenversiegelung.html">Fugenversiegelung</a><a class="chip" href="einsatzbeispiele/gebaeudereiniger.html">Gebäudereiniger</a><a class="chip" href="einsatzbeispiele/malerbetriebe.html">Malerbetriebe</a><a class="chip" href="einsatzbeispiele/werbetechniker.html">Werbetechniker</a><a class="chip" href="einsatzbeispiele/sonstige-gewerke.html">Sonstige Gewerke</a></div>
           <a class="btn2 line" href="einsatzbeispiele/handwerker.html">Alle Gewerke ansehen</a>
@@ -762,8 +762,7 @@ h1 .ln:nth-child(3)>span{color:var(--R)}
       <article class="wcard rv" style="--d:.1s">
         <div class="wcard-img"><img src="img/foto-raupe-haus.jpg" alt="Raupenarbeitsbühne vor einem Wohnhaus" loading="lazy" width="1600" height="1067"></div>
         <div class="wcard-body">
-          <svg class="wbig" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l9-8 9 8"/><path d="M5 10v11h14V10"/><path d="M10 21v-6h4v6"/></svg>
-          <h3>Für Privatleute</h3>
+          <div class="whead"><h3>Für Privatleute</h3><svg class="wbig" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l9-8 9 8"/><path d="M5 10v11h14V10"/><path d="M10 21v-6h4v6"/></svg></div>
           <p>Du brauchst die Bühne nur einmal? Kein Problem. Wir beraten dich und weisen dich ein.</p>
           <ul class="sq"><li>Hecke und Baum schneiden</li><li>Dach, Rinne und Fassade</li><li>Fenster und Rollläden</li><li>Streichen in der Höhe</li></ul>
           <a class="btn2 line" href="einsatzbeispiele/privatleute.html">Typische Einsätze ansehen</a>
