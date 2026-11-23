@@ -382,6 +382,8 @@ body{font-family:'Barlow',sans-serif;color:var(--ink)}
 .disc,.ring{display:none}
 .panelwrap{display:none}
 .main{--sh:clamp(380px,calc(100svh - 150px),860px);padding-bottom:34px}
+@media (max-width:1199px){.main{--sh:clamp(400px,76vw,640px)}}
+@media (max-width:699px){.main{--sh:calc((100vw - 40px)/.9)}}
 h1{font-family:var(--hf);font-weight:700;font-size:min(88px,12cqw);letter-spacing:-.01em;line-height:1;color:var(--ink)}
 h1 .ln:nth-child(3)>span{color:var(--R)}
 .sub{font-size:clamp(18px,1.5vw,22px);color:#3d3d3b;max-width:30em}
