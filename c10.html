@@ -376,12 +376,10 @@ body{font-family:'Barlow',sans-serif;color:var(--ink)}
 /* Hero: weiß, mit schrägen roten Flächen hinter der Bühne */
 .hero{background:#fff;isolation:isolate}
 .sec{position:relative}
-.hero::before,.hero::after{content:"";position:absolute;left:0;right:0;bottom:0;z-index:1;pointer-events:none}
-.hero::before{height:60%;background:var(--R);clip-path:polygon(0 100%,100% 14%,100% 100%)}
-.hero::after{height:60%;background:var(--R3);clip-path:polygon(0 100%,100% 52%,100% 100%)}
+.hero-bg{position:absolute;inset:0;z-index:0;background:url(img/bg-clean.jpg) 62% 50%/cover no-repeat}
+.hero-bg svg{position:absolute;inset:0;width:100%;height:100%;display:block}
 .disc,.ring{display:none}
-.panelwrap{filter:drop-shadow(0 22px 30px rgba(0,0,0,.38))}
-.panel{border-radius:8px}
+.panelwrap{display:none}
 .main{--sh:clamp(380px,calc(100svh - 150px - var(--cut)*.6),860px);padding-bottom:calc(30px + var(--cut)*.5)}
 h1{font-family:var(--hf);font-weight:700;font-size:min(88px,12cqw);letter-spacing:-.01em;line-height:1;color:var(--ink)}
 h1 .ln:nth-child(3)>span{color:var(--R)}
@@ -391,8 +389,12 @@ h1 .ln:nth-child(3)>span{color:var(--R)}
 .btn.secondary{background:#fff;color:var(--Rt);box-shadow:inset 0 0 0 1.5px var(--R)}
 .glabel{font-weight:600}
 .partner{border-radius:8px;box-shadow:0 2px 10px rgba(0,0,0,.14)}
-@media (max-width:1199px){h1{font-size:min(72px,12cqw)}.hero::before,.hero::after{height:44%}}
-@media (max-width:699px){.hero::before,.hero::after{height:36%}}
+@media (max-width:1199px){
+  h1{font-size:min(72px,12cqw)}
+  .hero-bg{background:none}.hero-bg svg{display:none}
+  .stagecol{position:relative}
+  .stagecol::before{content:"";position:absolute;z-index:-1;left:50%;width:100vw;margin-left:-50vw;top:30.3%;bottom:3.7%;background:url(img/bg-clean.jpg) 55% 62%/cover no-repeat}
+}
 
 /* Schräge Section-Übergänge */
 .cut{margin-top:calc(var(--cut)*-1);padding-top:calc(var(--cut) + clamp(48px,5.5vw,88px))}
@@ -545,7 +547,7 @@ h1 .ln:nth-child(3)>span{color:var(--R)}
 .foot-logo{border-radius:8px}
 </style></head><body>
 
-<section class="hero">
+<section class="hero"><div class="hero-bg" aria-hidden="true"><svg viewBox="0 0 100 100" preserveAspectRatio="none"><polygon class="wh" points="0,0 54,0 40,100 0,100" fill="#fff"/><polygon points="0,100 100,48 100,100" fill="#e8291f"/><polygon points="0,100 100,71 100,100" fill="#bb1d14"/></svg></div>
 <header class="nav">
   <a class="logo" href="#"><img src="img/Logopng.png" alt="Zeisberg Arbeitsbühnenvermietung"></a>
   <nav class="menu">
@@ -578,7 +580,7 @@ h1 .ln:nth-child(3)>span{color:var(--R)}
     </div>
   </div>
 </div>
-<script src="js/scherenbuehne.js?v=3"></script>
+<script src="js/scherenbuehne.js?v=4"></script>
 <script>
 (function(){
   /* Hamburger-Menü */
