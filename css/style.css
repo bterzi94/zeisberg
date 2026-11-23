@@ -804,6 +804,8 @@ details.reach[open] .pm{background:var(--R)}details.reach[open] .pm::before,deta
 .wa{position:fixed;right:clamp(14px,2vw,28px);bottom:clamp(14px,2vw,28px);z-index:80;height:60px;min-width:60px;padding:0 18px;border-radius:100px;background:#25d366;color:#fff;display:flex;align-items:center;justify-content:center;gap:10px;font-weight:700;font-size:17px;box-shadow:0 6px 20px rgba(0,0,0,.3);transition:transform .2s,box-shadow .2s}
 .wa:hover,.wa:focus-visible{transform:translateY(-3px);box-shadow:0 10px 26px rgba(0,0,0,.36);outline:none}
 .wa svg{width:32px;height:32px;flex:none}
+.wa span{display:flex;flex-direction:column;line-height:1.05;text-align:left;font-size:17px}
+.wa span small{font-size:12px;font-weight:600;opacity:.92;letter-spacing:.01em}
 @media (max-width:899px){.wa{padding:0;width:58px;height:58px}.wa span{display:none}}
 .kbox>svg.wa-i{color:#1fa855}
 body.lb-open .wa{display:none}
