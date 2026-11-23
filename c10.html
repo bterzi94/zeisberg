@@ -363,24 +363,25 @@ html{scroll-behavior:smooth}
 }
 
 /* ===== Stil "BSR": Foto-stark, schräge Flächen, kleine Radien, Rot/Schwarz ===== */
-:root{--cut:clamp(28px,4.2vw,72px);--ink:#1d1d1b;--grey:#ececec;--R:#e8291f;--R2:#d6251b;--R3:#bb1d14;--Rt:#cf2118;--hf:'Barlow Semi Condensed','Barlow',sans-serif}
+:root{--nh:calc(28px + clamp(40px,3.8vw,56px));--cut:clamp(28px,4.2vw,72px);--ink:#1d1d1b;--grey:#ececec;--R:#e8291f;--R2:#d6251b;--R3:#bb1d14;--Rt:#cf2118;--hf:'Barlow Semi Condensed','Barlow',sans-serif}
+html,body{height:auto;min-height:100%}
 body{font-family:'Barlow',sans-serif;color:var(--ink)}
 
 /* Navigation: weiße Leiste mit Schatten */
-.nav{max-width:none;margin:0;padding:14px max(var(--pad),calc((100% - 1760px)/2 + var(--pad)));background:#fff;box-shadow:none;z-index:30;animation:none}
+.nav{max-width:none;margin:0;height:var(--nh);padding:0 max(var(--pad),calc((100% - 1760px)/2 + var(--pad)));background:#fff;box-shadow:none;border-bottom:1px solid #dcdcdc;position:sticky;top:0;z-index:60;animation:none}
 .logo img{height:clamp(40px,3.8vw,56px)}
 .menu a{font-family:var(--hf);font-weight:600;font-size:clamp(15px,1.3vw,19px);color:var(--ink)}
 .menu a:hover,.menu a.active{color:var(--Rt)}
 .tel{font-family:'Barlow',sans-serif;font-size:clamp(14px,1.1vw,16px);font-weight:700}
 
 /* Hero: weiß, mit schrägen roten Flächen hinter der Bühne */
-.hero{background:#fff;isolation:isolate}
-.sec{position:relative}
+.hero{background:#fff;isolation:isolate;min-height:calc(100vh - var(--nh));min-height:calc(100svh - var(--nh))}
+.sec{position:relative;scroll-margin-top:0}
 .hero-bg{position:absolute;inset:0;z-index:0;background:url(img/bg-clean.jpg) 62% 50%/cover no-repeat}
 .hero-bg svg{position:absolute;inset:0;width:100%;height:100%;display:block}
 .disc,.ring{display:none}
 .panelwrap{display:none}
-.main{--sh:clamp(380px,calc(100svh - 150px - var(--cut)*.6),860px);padding-bottom:calc(30px + var(--cut)*.5)}
+.main{--sh:clamp(380px,calc(100svh - 150px),860px);padding-bottom:30px}
 h1{font-family:var(--hf);font-weight:700;font-size:min(88px,12cqw);letter-spacing:-.01em;line-height:1;color:var(--ink)}
 h1 .ln:nth-child(3)>span{color:var(--R)}
 .sub{font-size:clamp(18px,1.5vw,22px);color:#3d3d3b;max-width:30em}
@@ -563,7 +564,6 @@ h1 .ln:nth-child(3)>span{color:var(--R)}
 .foot-logo{border-radius:8px}
 </style></head><body>
 
-<section class="hero"><div class="hero-bg" aria-hidden="true"><svg viewBox="0 0 100 100" preserveAspectRatio="none"><polygon class="wh" points="0,0 54,0 40,100 0,100" fill="#fff"/></svg></div>
 <header class="nav">
   <a class="logo" href="#"><img src="img/Logopng.png" alt="Zeisberg Arbeitsbühnenvermietung"></a>
   <nav class="menu">
@@ -578,6 +578,8 @@ h1 .ln:nth-child(3)>span{color:var(--R)}
   <a class="tel" href="tel:+491779582309"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8a15.1 15.1 0 006.6 6.6l2.2-2.2a1 1 0 011-.25 11.4 11.4 0 003.6.57 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.45.57 3.6a1 1 0 01-.25 1z"/></svg>0177 9582309</a>
   <button class="burger" id="burger" aria-label="Menü öffnen" aria-expanded="false"><span></span><span></span><span></span></button>
 </header>
+<section class="hero"><div class="hero-bg" aria-hidden="true"><svg viewBox="0 0 100 100" preserveAspectRatio="none"><polygon class="wh" points="0,0 54,0 40,100 0,100" fill="#fff"/><polygon class="rd" points="0,100 0,81 42,100" fill="#e8291f"/><polygon class="rd" points="0,100 0,91 24,100" fill="#bb1d14"/></svg></div>
+
 <div class="main">
   <div class="content">
     <h1><span class="ln"><span>Arbeitsbühnen</span></span><span class="ln"><span>mieten in</span></span><span class="ln"><span>Mönchengladbach</span></span></h1>
@@ -642,7 +644,7 @@ h1 .ln:nth-child(3)>span{color:var(--R)}
 })();
 </script>
 </section>
-<section class="sec types bgg cut cut-l" id="arbeitsbuehnen">
+<section class="sec types bgg" id="arbeitsbuehnen">
   <div class="sec-in">
     <p class="kicker">Unsere Arbeitsbühnen</p>
     <h2>Welche Arbeitsbühne brauchst du?</h2>
