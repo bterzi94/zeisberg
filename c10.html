@@ -394,7 +394,7 @@ h1 .ln:nth-child(3)>span{color:var(--R)}
   h1{font-size:min(72px,12cqw)}
   .hero-bg{background:none}.hero-bg svg{display:none}
   .stagecol{position:relative}
-  .stagecol::before{content:"";position:absolute;z-index:-1;left:50%;width:100vw;margin-left:-50vw;top:30.3%;bottom:3.7%;background:url(img/bg-clean.jpg) 55% 62%/cover no-repeat}
+  .stagecol::before{content:"";position:absolute;z-index:-1;left:50%;width:100vw;margin-left:-50vw;top:30.3%;bottom:-34px;background:url(img/bg-clean.jpg) 55% 100%/cover no-repeat;clip-path:polygon(0 clamp(30px,9vw,70px),100% 0,100% 100%,0 100%)}
 }
 
 /* Schräge Section-Übergänge */
@@ -523,6 +523,28 @@ h1 .ln:nth-child(3)>span{color:var(--R)}
 .pl-stat:first-child b{color:#ff5a4d}
 .pl-logo{border-radius:8px}
 .pl-list svg,.chk{border-radius:4px}
+
+/* PartnerLIFT: Netzwerk-Grafik statt Karten */
+.pl-viz{width:100%;max-width:600px;justify-self:end}
+.pl-viz svg{display:block;width:100%;height:auto;overflow:visible}
+.pl-viz .ln{stroke:rgba(255,255,255,.22);stroke-width:1}
+.pl-viz .lr{stroke:#ff5a4d;stroke-width:1.6;stroke-dasharray:3 5;animation:plflow 2.4s linear infinite}
+.pl-viz .nd{fill:#fff}
+.pl-viz .nd.dim{fill:rgba(255,255,255,.55)}
+.pl-viz .hub{fill:#ff5a4d}
+.pl-viz .ring{fill:none;stroke:#ff5a4d;stroke-width:1.5;transform-box:fill-box;transform-origin:center;animation:plpulse 2.8s ease-out infinite}
+.pl-viz .ring.r2{animation-delay:1.4s}
+.pl-viz text{font-family:var(--hf);font-weight:700;font-size:15px;fill:#fff}
+@keyframes plflow{to{stroke-dashoffset:-16}}
+@keyframes plpulse{0%{transform:scale(.6);opacity:.9}100%{transform:scale(3.2);opacity:0}}
+@media (prefers-reduced-motion:reduce){.pl-viz .lr,.pl-viz .ring{animation:none}}
+.pl-nums{display:grid;grid-template-columns:auto auto auto;justify-content:space-between;margin-top:clamp(16px,2vw,28px);border-top:1px solid rgba(255,255,255,.28)}
+.pl-num{padding:18px 12px 0 0}
+.pl-num+.pl-num{border-left:1px solid rgba(255,255,255,.2);padding-left:clamp(12px,1.6vw,24px)}
+.pl-num b{display:block;font-family:var(--hf);font-weight:700;font-size:clamp(26px,2.9vw,44px);line-height:1;color:#fff;white-space:nowrap}
+.pl-num:first-child b{color:#ff5a4d}
+.pl-num span{display:block;margin-top:6px;font-weight:600;font-size:clamp(14px,1.1vw,16px);color:rgba(255,255,255,.78)}
+@media (max-width:899px){.pl-viz{justify-self:stretch;max-width:560px}}
 
 /* 10 FAQ */
 .faq-split{grid-template-columns:minmax(0,4fr) minmax(0,7fr);align-items:start}
@@ -774,7 +796,7 @@ h1 .ln:nth-child(3)>span{color:var(--R)}
       <p class="lead">Als Partner im PartnerLIFT-Vermietnetzwerk greifen wir auf einen gemeinsamen Gerätepool zu. So steht für nahezu jeden Einsatz das passende Gerät bereit, flexibel, zuverlässig und deutschlandweit.</p>
       <ul class="pl-list"><li><svg class="" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Hohe Verfügbarkeit in Deutschland und Europa</li><li><svg class="" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Große Auswahl an Arbeitsbühnen, Baumaschinen, Kranen und Staplern</li><li><svg class="" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Flexibel und zuverlässig für nahezu jeden Einsatz</li></ul>
     </div>
-    <div class="pl-stats"><div class="pl-stat rv"><b>150+</b><span>Mietstationen</span></div><div class="pl-stat rv"><b>15.000+</b><span>Mietgeräte</span></div><div class="pl-stat rv"><b>DE & EU</b><span>Verfügbarkeit</span></div></div>
+    <div class="pl-viz rv"><svg viewBox="0 0 420 320" role="img" aria-label="Vernetzung: Zeisberg im PartnerLIFT-Netzwerk mit über 150 Mietstationen"><line class="ln" x1="24.4" y1="12.2" x2="16.3" y2="78.2"/><line class="ln" x1="24.4" y1="12.2" x2="83.9" y2="19.1"/><line class="ln" x1="16.3" y1="78.2" x2="66.9" y2="87.2"/><line class="ln" x1="21.1" y1="301.6" x2="85.9" y2="239.2"/><line class="ln" x1="21.1" y1="301.6" x2="67.4" y2="285.7"/><line class="ln" x1="83.9" y1="19.1" x2="138.6" y2="20.0"/><line class="ln" x1="66.9" y1="87.2" x2="70.0" y2="121.7"/><line class="ln" x1="70.0" y1="121.7" x2="91.5" y2="178.7"/><line class="ln" x1="91.5" y1="178.7" x2="85.9" y2="239.2"/><line class="ln" x1="91.5" y1="178.7" x2="135.2" y2="188.3"/><line class="ln" x1="85.9" y1="239.2" x2="67.4" y2="285.7"/><line class="ln" x1="85.9" y1="239.2" x2="140.2" y2="236.9"/><line class="ln" x1="67.4" y1="285.7" x2="120.6" y2="295.7"/><line class="ln" x1="138.6" y1="20.0" x2="135.6" y2="75.9"/><line class="ln" x1="135.6" y1="75.9" x2="142.3" y2="138.0"/><line class="ln" x1="135.6" y1="75.9" x2="189.7" y2="84.6"/><line class="ln" x1="142.3" y1="138.0" x2="135.2" y2="188.3"/><line class="ln" x1="135.2" y1="188.3" x2="140.2" y2="236.9"/><line class="ln" x1="140.2" y1="236.9" x2="120.6" y2="295.7"/><line class="ln" x1="140.2" y1="236.9" x2="186.8" y2="241.6"/><line class="ln" x1="189.7" y1="84.6" x2="221.7" y2="27.6"/><line class="ln" x1="189.7" y1="84.6" x2="251.5" y2="86.2"/><line class="ln" x1="186.8" y1="241.6" x2="198.5" y2="297.3"/><line class="ln" x1="198.5" y1="297.3" x2="244.3" y2="287.6"/><line class="ln" x1="221.7" y1="27.6" x2="251.5" y2="86.2"/><line class="ln" x1="251.5" y1="86.2" x2="285.5" y2="78.6"/><line class="ln" x1="244.3" y1="287.6" x2="278.6" y2="290.5"/><line class="ln" x1="285.5" y1="78.6" x2="336.0" y2="73.5"/><line class="ln" x1="297.4" y1="142.6" x2="284.4" y2="183.6"/><line class="ln" x1="297.4" y1="142.6" x2="353.1" y2="137.7"/><line class="ln" x1="284.4" y1="183.6" x2="353.1" y2="137.7"/><line class="ln" x1="278.6" y1="290.5" x2="348.1" y2="295.0"/><line class="ln" x1="336.0" y1="73.5" x2="353.1" y2="137.7"/><line class="ln" x1="353.1" y1="137.7" x2="378.8" y2="176.4"/><line class="ln" x1="351.4" y1="250.6" x2="348.1" y2="295.0"/><line class="ln" x1="351.4" y1="250.6" x2="374.8" y2="253.3"/><line class="ln" x1="348.1" y1="295.0" x2="378.8" y2="291.1"/><line class="ln" x1="378.8" y1="176.4" x2="374.8" y2="253.3"/><line class="ln" x1="374.8" y1="253.3" x2="378.8" y2="291.1"/><line class="lr" x1="210" y1="168" x2="142.3" y2="138.0"/><line class="lr" x1="210" y1="168" x2="284.4" y2="183.6"/><line class="lr" x1="210" y1="168" x2="186.8" y2="241.6"/><line class="lr" x1="210" y1="168" x2="135.2" y2="188.3"/><line class="lr" x1="210" y1="168" x2="189.7" y2="84.6"/><line class="lr" x1="210" y1="168" x2="297.4" y2="142.6"/><line class="lr" x1="210" y1="168" x2="251.5" y2="86.2"/><circle class="nd dim" cx="24.4" cy="12.2" r="3.2"/><circle class="nd" cx="16.3" cy="78.2" r="3.2"/><circle class="nd" cx="21.1" cy="301.6" r="2.6"/><circle class="nd dim" cx="83.9" cy="19.1" r="2.6"/><circle class="nd" cx="66.9" cy="87.2" r="3.2"/><circle class="nd" cx="70.0" cy="121.7" r="3.2"/><circle class="nd dim" cx="91.5" cy="178.7" r="3.2"/><circle class="nd" cx="85.9" cy="239.2" r="3.2"/><circle class="nd" cx="67.4" cy="285.7" r="3.2"/><circle class="nd dim" cx="138.6" cy="20.0" r="2.6"/><circle class="nd" cx="135.6" cy="75.9" r="2.6"/><circle class="nd" cx="142.3" cy="138.0" r="2.6"/><circle class="nd dim" cx="135.2" cy="188.3" r="4"/><circle class="nd" cx="140.2" cy="236.9" r="3.2"/><circle class="nd" cx="120.6" cy="295.7" r="4"/><circle class="nd dim" cx="189.7" cy="84.6" r="3.2"/><circle class="nd" cx="186.8" cy="241.6" r="3.2"/><circle class="nd" cx="198.5" cy="297.3" r="4"/><circle class="nd dim" cx="221.7" cy="27.6" r="2.6"/><circle class="nd" cx="251.5" cy="86.2" r="4"/><circle class="nd" cx="244.3" cy="287.6" r="2.6"/><circle class="nd dim" cx="285.5" cy="78.6" r="2.6"/><circle class="nd" cx="297.4" cy="142.6" r="4"/><circle class="nd" cx="284.4" cy="183.6" r="3.2"/><circle class="nd dim" cx="278.6" cy="290.5" r="2.6"/><circle class="nd" cx="336.0" cy="73.5" r="4"/><circle class="nd" cx="353.1" cy="137.7" r="4"/><circle class="nd dim" cx="351.4" cy="250.6" r="2.6"/><circle class="nd" cx="348.1" cy="295.0" r="4"/><circle class="nd" cx="378.8" cy="176.4" r="3.2"/><circle class="nd dim" cx="374.8" cy="253.3" r="4"/><circle class="nd" cx="378.8" cy="291.1" r="2.6"/><circle class="ring" cx="210" cy="168" r="14"/><circle class="ring r2" cx="210" cy="168" r="14"/><circle class="hub" cx="210" cy="168" r="10"/><text x="210" y="202" text-anchor="middle">Zeisberg</text></svg><div class="pl-nums"><div class="pl-num"><b>150+</b><span>Mietstationen</span></div><div class="pl-num"><b>15.000+</b><span>Mietgeräte</span></div><div class="pl-num"><b>DE &amp; EU</b><span>Verfügbarkeit</span></div></div></div>
   </div>
 </section>
 
